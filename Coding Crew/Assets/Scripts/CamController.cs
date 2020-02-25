@@ -122,11 +122,11 @@ public class CamController : MonoBehaviour
         {
             if (angle < -360F)
             {
-                angle += 360F;
+                angle = -360F;
             }
             if (angle > 360F)
             {
-                angle -= 360F;
+                angle = 360F;
             }
         }
         return Mathf.Clamp(angle, min, max);
