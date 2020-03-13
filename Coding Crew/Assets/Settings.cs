@@ -26,9 +26,7 @@ public class Settings : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
-        if( FullScreen.isOn)
+        if(FullScreen.isOn)
         {
             Screen.fullScreen = true;
         }
