@@ -27,40 +27,38 @@ public class posterVeiw : MonoBehaviour
         {
             if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 20))
             {
-                //Target target = hit.transform.GetComponent<Target>();
-                Debug.Log(hit.transform.name);
                 if (posterOpen != true)
                 {
-                    if (hit.transform.name == "Poster1")
+                    foreach(GameObject pS in Posters)
                     {
-                        Posters[0].SetActive(true);
-                        posterOpen = true;
-                    }
-                    else if (hit.transform.name == "Poster 2")
-                    {
-                        Posters[1].SetActive(true);
-                        posterOpen = true;
-                    }
-                    else if (hit.transform.name == "Poster 3")
-                    {
-                        Posters[2].SetActive(true);
-                        posterOpen = true;
-                    }
-                    else if (hit.transform.name == "Poster 4")
-                    {
-                        Posters[3].SetActive(true);
-                        posterOpen = true;
-                    }
-                    else if (hit.transform.name == "Poster 5")
-                    {
-                        Posters[4].SetActive(true);
-                        posterOpen = true;
+                        if (hit.transform.tag == pS.transform.tag)
+                        {
+                            pS.SetActive(true);
+                            posterOpen = true;
+                        }
                     }
                 }
             }
         }
+        else
+        {
+            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 20))
+            {
+                //Renderer posterRenderer = hit.transform.GetComponent<Renderer>();
+                foreach (GameObject pS in Posters)
+                {
+                    if (hit.transform.tag == pS.transform.tag)
+                    {
+                        //hit.transform.position = hit.transform.position + new Vector3(0, 0, .06f);
+                    }
+                }
 
-        if(Input.GetKeyDown(KeyCode.Tab))
+            }
+        }
+
+        hit.transform.position = hit.transform.position - new Vector3(0, 0, .06f);
+
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             foreach(GameObject p in Posters)
             {

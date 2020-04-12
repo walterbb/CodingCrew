@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Poster1
+  - Poster2
+  - Poster3
+  - Poster4
+  - Poster5
   layers:
   - Default
   - TransparentFX

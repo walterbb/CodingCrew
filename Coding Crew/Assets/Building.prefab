@@ -3860,21 +3860,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poster 2
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 45565251077e14d4180ee5c2bb5b896d, type: 3}
+      propertyPath: m_TagString
+      value: Poster2
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 45565251077e14d4180ee5c2bb5b896d, type: 3}
       propertyPath: m_Name
       value: Poster 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 45565251077e14d4180ee5c2bb5b896d, type: 3}
+      propertyPath: m_TagString
+      value: Poster3
       objectReference: {fileID: 0}
     - target: {fileID: 100028, guid: 45565251077e14d4180ee5c2bb5b896d, type: 3}
       propertyPath: m_Name
       value: Poster 5
       objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 45565251077e14d4180ee5c2bb5b896d, type: 3}
+      propertyPath: m_TagString
+      value: Poster5
+      objectReference: {fileID: 0}
     - target: {fileID: 100030, guid: 45565251077e14d4180ee5c2bb5b896d, type: 3}
       propertyPath: m_Name
+      value: Poster1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 45565251077e14d4180ee5c2bb5b896d, type: 3}
+      propertyPath: m_TagString
       value: Poster1
       objectReference: {fileID: 0}
     - target: {fileID: 100032, guid: 45565251077e14d4180ee5c2bb5b896d, type: 3}
       propertyPath: m_Name
       value: Poster 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 45565251077e14d4180ee5c2bb5b896d, type: 3}
+      propertyPath: m_TagString
+      value: Poster4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 45565251077e14d4180ee5c2bb5b896d, type: 3}
       propertyPath: m_LocalPosition.x
