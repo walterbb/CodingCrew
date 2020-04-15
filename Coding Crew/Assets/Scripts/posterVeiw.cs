@@ -15,7 +15,7 @@ public class posterVeiw : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        posterOpen = false;
     }
 
     // Update is called once per frame
@@ -44,19 +44,17 @@ public class posterVeiw : MonoBehaviour
         {
             if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 20))
             {
-                //Renderer posterRenderer = hit.transform.GetComponent<Renderer>();
+                Renderer posterRenderer = hit.transform.GetComponent<Renderer>();
                 foreach (GameObject pS in Posters)
                 {
-                    if (hit.transform.tag == pS.transform.tag)
+                    posterRenderer.material.EnableKeyword("_EMISSION");
+                    if(hit.transform.tag == pS.transform.tag)
                     {
-                        //hit.transform.position = hit.transform.position + new Vector3(0, 0, .06f);
+                        posterRenderer.material.SetColor("_EmissionColor", posterRenderer.material.color * .15f);
                     }
                 }
-
             }
         }
-
-        hit.transform.position = hit.transform.position - new Vector3(0, 0, .06f);
 
         if (Input.GetKeyDown(KeyCode.Tab))
         {

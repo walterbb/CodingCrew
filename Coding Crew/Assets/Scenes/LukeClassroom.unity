@@ -379,7 +379,7 @@ RectTransform:
   m_GameObject: {fileID: 53216473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.8, z: 1}
+  m_LocalScale: {x: 0.35, y: 0.9, z: 1}
   m_Children:
   - {fileID: 603035508}
   m_Father: {fileID: 714673484}
@@ -1765,7 +1765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 139.2}
+  m_AnchoredPosition: {x: 0, y: 15.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &349201519
@@ -1799,7 +1799,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Poster 1
+  m_Text: "Walt \nDoesnt'\nKnow\nfor each\nloops"
 --- !u!222 &349201520
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3685,7 +3685,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 139.19998}
+  m_AnchoredPosition: {x: 0, y: 12.94}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &603035509
@@ -3719,7 +3719,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Poster 3
+  m_Text: "Luke is \nreally \ncool, like \nguys he\nactually is"
 --- !u!222 &603035510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5113,7 +5113,7 @@ RectTransform:
   m_GameObject: {fileID: 726671238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.8, z: 1}
+  m_LocalScale: {x: 0.35, y: 0.9, z: 1}
   m_Children:
   - {fileID: 1105285526}
   m_Father: {fileID: 714673484}
@@ -5855,7 +5855,7 @@ RectTransform:
   m_GameObject: {fileID: 882746693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.8, z: 1}
+  m_LocalScale: {x: 0.35, y: 0.9, z: 1}
   m_Children:
   - {fileID: 1766462615}
   m_Father: {fileID: 714673484}
@@ -7730,7 +7730,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 139.19998}
+  m_AnchoredPosition: {x: 0, y: 41.9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1105285527
@@ -7764,7 +7764,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Poster 4
+  m_Text: 'Gugu is
+
+    definitely
+
+    sad he left
+
+    our group'
 --- !u!222 &1105285528
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9288,7 +9294,7 @@ RectTransform:
   m_GameObject: {fileID: 1316326745}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.8, z: 1}
+  m_LocalScale: {x: 0.35, y: 0.9, z: 1}
   m_Children:
   - {fileID: 1609154597}
   m_Father: {fileID: 714673484}
@@ -11352,7 +11358,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Poster 2
+  m_Text: 'Matthew =
+
+    dumb'
 --- !u!222 &1609154599
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11967,7 +11975,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 139.19998}
+  m_AnchoredPosition: {x: 0, y: 66.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1766462616
@@ -12001,7 +12009,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Poster 5
+  m_Text: 'Matthew !=
+
+    cool'
 --- !u!222 &1766462617
 CanvasRenderer:
   m_ObjectHideFlags: 0
