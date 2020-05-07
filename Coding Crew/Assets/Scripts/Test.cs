@@ -21,11 +21,20 @@ public class Test : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.T))
         {
             TestActive = true;
-        }
-        if(TestActive)
-        {
             TestTime();
         }
+        else if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            TestActive = false;
+            TestOff();
+        }
+    }
+
+    public void TestOff()
+    {
+        pointer.SetActive(false);
+        mainCam.transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
+        mainCam.fieldOfView = 75f;
     }
 
     public void TestTime()
