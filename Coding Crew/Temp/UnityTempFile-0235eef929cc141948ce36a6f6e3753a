@@ -304,5 +304,6 @@
 "Assets/Scripts/sceneChanger.cs"
 "Assets/Scripts/Settings.cs"
 "Assets/Scripts/Test.cs"
+"Assets/Scripts/TestChecker.cs"
+"Assets/Scripts/TestMaker.cs"
 "Assets/Scripts/TextHover.cs"
-"Assets/TestMaker.cs"
