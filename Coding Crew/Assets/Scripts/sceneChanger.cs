@@ -5,9 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class sceneChanger : MonoBehaviour
 {
+
+    public Animator anim;
+
     public void ClassScene()
     {
-        SceneManager.LoadScene("Classroom");
+        StartCoroutine(ClassLoad());
     }
 
+
+    IEnumerator ClassLoad()
+    {
+        anim.SetBool("play", true);
+        yield return new WaitForSeconds(1);
+        anim.SetBool("play", false);
+        SceneManager.LoadScene("LukeClassroom");
+    }
 }
