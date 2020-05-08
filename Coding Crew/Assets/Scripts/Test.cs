@@ -23,6 +23,7 @@ public class Test : MonoBehaviour
     public Text timeTillText;
 
     bool pauseTest;
+    bool TestStarted;
 
     public Button TurnIn;
 
@@ -40,13 +41,13 @@ public class Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!TestActive)
+        if(!TestStarted)
         {
-            BeforeTest();
+            BeforeStart();
         }
-        else if (TestActive)
+        else if (TestStarted)
         {
-            AfterTest();
+            AfterStart();
         }
     }
 
@@ -55,7 +56,7 @@ public class Test : MonoBehaviour
         SceneManager.LoadScene("GradeCheck");
     }
 
-    void AfterTest()
+    void AfterStart()
     {
         timeTillTest += Time.deltaTime;
 
@@ -83,7 +84,7 @@ public class Test : MonoBehaviour
         }
     }
 
-    void BeforeTest()
+    void BeforeStart()
     {
         timeTillTest += Time.deltaTime;
 
@@ -94,6 +95,7 @@ public class Test : MonoBehaviour
         if (timeTillTest == waitTime && TestActive == false)
         {
             TestActive = true;
+            TestStarted = true;
             timeTillText.text = "TEST OVER IN";
             timerSlider.value = timeForTest;
             timerSlider.maxValue = timeForTest;
@@ -104,6 +106,7 @@ public class Test : MonoBehaviour
 
     public void TestPause()
     {
+        TestActive = false;
         pointer.SetActive(true);
         mainCam.transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
         mainCam.transform.position = new Vector3(-3.2f, 1.48f, -2f);
@@ -116,6 +119,7 @@ public class Test : MonoBehaviour
     public void TestTime()
     {
         pointer.SetActive(false);
+        TestActive = true;
         mainCam.transform.rotation = Quaternion.Euler(new Vector3(90f,0f,0f));
         mainCam.transform.position = new Vector3(-3.2f, 1.87f, -1.43f);
         mainCam.fieldOfView = 31f;

@@ -31,7 +31,7 @@ public class TestMaker : MonoBehaviour
     public Text question4;
     public List<Text> answersText4;
     public readonly string[] q4answer1 = new string[] { "0", "5", "10", "11" };
-    public readonly string[] q4answer2 = new string[] { "5", "-5", "10", "392" };
+    public readonly string[] q4answer2 = new string[] { "13", "-5", "10", "392" };
     public readonly string[] q4answer3 = new string[] { "July 6th", "June 12th", "October 4th", "July 16th" };
 
     // Start is called before the first frame update
