@@ -27,7 +27,7 @@ public class TestChecker : MonoBehaviour
         instance = this;
     }
 
-    public void TestCheck()
+    public void Update()
     {
         Q1TestCheck();
         Q2TestCheck();
