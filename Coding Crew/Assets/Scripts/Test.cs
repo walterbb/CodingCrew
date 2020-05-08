@@ -16,6 +16,7 @@ public class Test : MonoBehaviour
 
     public posterVeiw posVeiw;
 
+	public GameObject timeTillObject;
     public Slider timerSlider;
     public int waitTime;
     public int timeForTest;
@@ -27,7 +28,8 @@ public class Test : MonoBehaviour
 
     public Button TurnIn;
 
-    // Start is called before the first frame update
+	public WakeUpManager wakeUpManager;
+
     void Start()
     {
         pointer.SetActive(true);
@@ -38,17 +40,21 @@ public class Test : MonoBehaviour
         timerSlider.maxValue = waitTime;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(!TestStarted)
-        {
-            BeforeStart();
-        }
-        else if (TestStarted)
-        {
-            AfterStart();
-        }
+		if(wakeUpManager.wakeUp)
+		{
+			timeTillObject.SetActive(true);
+			if (!TestStarted)
+			{
+				BeforeStart();
+			}
+			else if (TestStarted)
+			{
+			 AfterStart();
+			}
+		}
+		
     }
 
     public void TestOver()
