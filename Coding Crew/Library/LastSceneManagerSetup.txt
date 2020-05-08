@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/LukeClassroom.unity
+=======
+- path: Assets/Scenes/Classroom 1.unity
+>>>>>>> WaltWakeUp
   isLoaded: 1
   isActive: 1
