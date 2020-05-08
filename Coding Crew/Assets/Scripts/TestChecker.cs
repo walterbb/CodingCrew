@@ -7,25 +7,32 @@ using UnityEngine.UI;
 public class TestChecker : MonoBehaviour
 {
 
+    public static TestChecker instance;
+
     public TestMaker TM;
 
-    public int Q1Choice, Q2Choice, Q3Choice;
+    public int Q1Choice, Q2Choice, Q3Choice, Q4Choice;
 
-    private bool[] Q1Picked = new bool[] { false,false,false,false};
-
+    private bool[] Q1Picked = new bool[] { false, false, false, false };
     private bool[] Q2Picked = new bool[] { false, false, false, false };
-
     private bool[] Q3Picked = new bool[] { false, false, false, false };
+    private bool[] Q4Picked = new bool[] { false, false, false, false };
 
-    private bool Q1Correct,Q2Correct,Q3Correct;
+    private bool Q1Correct,Q2Correct,Q3Correct,Q4Correct;
 
-    float percentCorrect = 0;
+    public float percentCorrect = 0;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     public void TestCheck()
     {
         Q1TestCheck();
         Q2TestCheck();
         Q3TestCheck();
+        Q4TestCheck();
 
         int numCorrect = 0;
 
@@ -44,10 +51,15 @@ public class TestChecker : MonoBehaviour
             numCorrect++;
         }
 
-        
-        percentCorrect = (numCorrect / 3f) * 100f;
+        if (Q4Correct)
+        {
+            numCorrect++;
+        }
 
-        print(percentCorrect.ToString("F2") + "%");
+
+        percentCorrect = (numCorrect / 4f) * 100f;
+
+        print(percentCorrect.ToString("F0") + "%");
     }
 
     void Q1TestCheck()
@@ -161,6 +173,43 @@ public class TestChecker : MonoBehaviour
         }
     }
 
+    void Q4TestCheck()
+    {
+        switch (Q4Choice)
+        {
+            case 0:
+                if (Q4Picked[2])
+                {
+                    Q4Correct = true;
+                }
+                else
+                {
+                    Q4Correct = false;
+                }
+                break;
+            case 1:
+                if (Q4Picked[0])
+                {
+                    Q4Correct = true;
+                }
+                else
+                {
+                    Q4Correct = false;
+                }
+                break;
+            case 2:
+                if (Q4Picked[1])
+                {
+                    Q4Correct = true;
+                }
+                else
+                {
+                    Q4Correct = false;
+                }
+                break;
+        }
+    }
+
     public void Q1Select()
     {
         for (int i = 0; i < 4; i++)
@@ -233,6 +282,31 @@ public class TestChecker : MonoBehaviour
         else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 4"))
         {
             Q3Picked[3] = true;
+        }
+    }
+
+    public void Q4Select()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            Q4Picked[i] = false;
+        }
+
+        if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 1"))
+        {
+            Q4Picked[0] = true;
+        }
+        else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 2"))
+        {
+            Q4Picked[1] = true;
+        }
+        else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 3"))
+        {
+            Q4Picked[2] = true;
+        }
+        else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 4"))
+        {
+            Q4Picked[3] = true;
         }
     }
 }

@@ -24,9 +24,15 @@ public class TestMaker : MonoBehaviour
 
     public Text question3;
     public List<Text> answersText3;
-    public readonly string[] q3answer1 = new string[] { "He's too cool", "Wanted to make money", "Got nervous because we were cute", "Hates Luke" };
+    public readonly string[] q3answer1 = new string[] { "He's too cool", "Wanted to make money", "We're too cute", "Hates Luke" };
     public readonly string[] q3answer2 = new string[] { "12", "Order 66", "36", "0" };
     public readonly string[] q3answer3 = new string[] { "Light Blue", "Blue", "Baby Blue", "Dark Blue" };
+
+    public Text question4;
+    public List<Text> answersText4;
+    public readonly string[] q4answer1 = new string[] { "0", "5", "10", "11" };
+    public readonly string[] q4answer2 = new string[] { "5", "-5", "10", "392" };
+    public readonly string[] q4answer3 = new string[] { "July 6th", "June 12th", "October 4th", "July 16th" };
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +40,7 @@ public class TestMaker : MonoBehaviour
         Question1Set();
         Question2Set();
         Question3Set();
+        Question4Set();
     }
 
     void Question1Set()
@@ -125,6 +132,37 @@ public class TestMaker : MonoBehaviour
                 for (int i = 0; i < answersText3.Count; i++)
                 {
                     answersText3[i].text = q3answer3[i];
+                }
+                break;
+        }
+    }
+
+    void Question4Set()
+    {
+        int Qnum = Random.Range(0, 3);
+        tc.Q4Choice = Qnum;
+
+        switch (Qnum)
+        {
+            case 0:
+                question4.text = "How many Posters are in the room?";
+                for (int i = 0; i < answersText4.Count; i++)
+                {
+                    answersText4[i].text = q4answer1[i];
+                }
+                break;
+            case 1:
+                question4.text = "X + Y = 10, what is X equal to?";
+                for (int i = 0; i < answersText4.Count; i++)
+                {
+                    answersText4[i].text = q4answer2[i];
+                }
+                break;
+            case 2:
+                question4.text = "When is Luke's birthday?";
+                for (int i = 0; i < answersText3.Count; i++)
+                {
+                    answersText4[i].text = q4answer3[i];
                 }
                 break;
         }

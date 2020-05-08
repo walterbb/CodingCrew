@@ -10,9 +10,9 @@ public class posterVeiw : MonoBehaviour
 
     public List<GameObject> Posters;
 
-    bool posterOpen;
+    public bool posterOpen;
 
-    Animator anim;
+    public Test test;
 
     // Start is called before the first frame update
     void Start()
@@ -40,37 +40,23 @@ public class posterVeiw : MonoBehaviour
                         }
                     }
                 }
-            }
-        }
-        else
-        {
-            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 20))
-            {
-                foreach (GameObject pS in Posters)
+                else if (posterOpen == true)
                 {
-                    if(hit.transform.tag == pS.transform.tag)
-                    {   
-                        anim = hit.transform.GetComponent<Animator>();
-                        anim.SetBool("Poster_look", true);
-                        StartCoroutine(PosterAnim());
+                    foreach (GameObject p in Posters)
+                    {
+                        p.SetActive(false);
+                        posterOpen = false;
                     }
                 }
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (test.TestActive)
         {
-            foreach(GameObject p in Posters)
+            foreach (GameObject p in Posters)
             {
                 p.SetActive(false);
                 posterOpen = false;
             }
         }
-    }
-
-    IEnumerator PosterAnim()
-    {
-        yield return new WaitForSeconds(1f);
-        anim.SetBool("Poster_look", false);
     }
 }
