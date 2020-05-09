@@ -119,6 +119,7 @@ public class Test : MonoBehaviour
         mainCam.fieldOfView = 75f;
 
         Cursor.lockState = CursorLockMode.Locked;
+        
         Cursor.visible = false;
     }
 

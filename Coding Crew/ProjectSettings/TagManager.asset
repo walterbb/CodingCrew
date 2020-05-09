@@ -18,6 +18,9 @@ TagManager:
   - Poster8
   - Poster9
   - Poster10
+  - BoardLeft
+  - BoardRight
+  - Date
   layers:
   - Default
   - TransparentFX

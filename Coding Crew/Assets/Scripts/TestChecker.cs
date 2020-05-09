@@ -56,10 +56,7 @@ public class TestChecker : MonoBehaviour
             numCorrect++;
         }
 
-
         percentCorrect = (numCorrect / 4f) * 100f;
-
-        print(percentCorrect.ToString("F0") + "%");
     }
 
     void Q1TestCheck()
