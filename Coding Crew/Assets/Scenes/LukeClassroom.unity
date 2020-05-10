@@ -9445,13 +9445,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978089063}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.30070576, y: 0, z: 0, w: 0.953717}
   m_LocalPosition: {x: -3.2, y: 1.48, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 35, y: 0, z: 0}
 --- !u!114 &978089067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9466,6 +9466,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSenst: 250
   test: {fileID: 1255398113}
+  yClamp: 170
+  xClampUp: 0
+  xClampDown: 0
 --- !u!114 &978089068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11265,11 +11268,11 @@ RectTransform:
   m_Father: {fileID: 714673484}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -41.59}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 20, y: -40}
   m_SizeDelta: {x: 449.66003, y: 78.06}
-  m_Pivot: {x: 0.5, y: 1}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1132593001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12866,7 +12869,7 @@ MonoBehaviour:
   timeTillObject: {fileID: 1132592999}
   timerSlider: {fileID: 1132593001}
   waitTime: 30
-  timeForTest: 10
+  timeForTest: 30
   timeTillText: {fileID: 1660958565}
   TurnIn: {fileID: 1252204114}
   wakeUpManager: {fileID: 1808908677}
@@ -18069,6 +18072,7 @@ MonoBehaviour:
   sleepDelay: 3
   wakeUp: 0
   blackPanel: {fileID: 1048106435}
+  cam: {fileID: 978089067}
 --- !u!4 &1808908678
 Transform:
   m_ObjectHideFlags: 0
