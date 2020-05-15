@@ -19,6 +19,6 @@ public class sceneChanger : MonoBehaviour
         anim.SetBool("play", true);
         yield return new WaitForSeconds(1);
         anim.SetBool("play", false);
-        SceneManager.LoadScene("LukeClassroom");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

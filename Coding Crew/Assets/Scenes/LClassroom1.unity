@@ -12868,7 +12868,7 @@ MonoBehaviour:
   posVeiw: {fileID: 978089068}
   timeTillObject: {fileID: 1132592999}
   timerSlider: {fileID: 1132593001}
-  waitTime: 30
+  waitTime: 5
   timeForTest: 30
   timeTillText: {fileID: 1660958565}
   TurnIn: {fileID: 1252204114}

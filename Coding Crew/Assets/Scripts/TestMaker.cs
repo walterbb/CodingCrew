@@ -9,6 +9,7 @@ public class TestMaker : MonoBehaviour
     public GameObject allTest;
     public TestChecker tc;
 
+    private int Qnum = 0;
     
     public Text question1;
     public List<Text> answersText1;
@@ -51,8 +52,11 @@ public class TestMaker : MonoBehaviour
         new string[] { "July 6th", "June 12th", "October 4th", "July 16th" };
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
+        Qnum = NextDay.nextDay.day - 1;
+        Debug.Log("QNUM = " + Qnum);
+
         Question1Set();
         Question2Set();
         Question3Set();
@@ -61,8 +65,6 @@ public class TestMaker : MonoBehaviour
 
     void Question1Set()
     {
-        int Qnum = Random.Range(0, Q1Questions.Length);
-
         tc.Q1Choice = Qnum;
 
         switch (Qnum)
@@ -93,7 +95,6 @@ public class TestMaker : MonoBehaviour
 
     void Question2Set()
     {
-        int Qnum = Random.Range(0, Q2Questions.Length);
         tc.Q2Choice = Qnum;
 
         switch (Qnum)
@@ -124,7 +125,6 @@ public class TestMaker : MonoBehaviour
 
     void Question3Set()
     {
-        int Qnum = Random.Range(0, Q3Questions.Length);
         tc.Q3Choice = Qnum;
 
         switch (Qnum)
@@ -155,7 +155,6 @@ public class TestMaker : MonoBehaviour
 
     void Question4Set()
     {
-        int Qnum = Random.Range(0, Q4Questions.Length);
         tc.Q4Choice = Qnum;
 
         switch (Qnum)
