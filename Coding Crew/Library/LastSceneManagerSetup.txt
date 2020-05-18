@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Classroom 1.unity
-=======
-- path: Assets/Scenes/LukeClassroom.unity
->>>>>>> master
+- path: Assets/Scenes/Classroom.unity
   isLoaded: 1
   isActive: 1

@@ -45,6 +45,7 @@ public class Test : MonoBehaviour
 		if(wakeUpManager.wakeUp)
 		{
 			timeTillObject.SetActive(true);
+
 			if (!TestStarted)
 			{
 				BeforeStart();
@@ -130,7 +131,7 @@ public class Test : MonoBehaviour
         mainCam.transform.position = new Vector3(-3.2f, 1.87f, -1.43f);
         mainCam.fieldOfView = 31f;
 
-        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
     }
 }

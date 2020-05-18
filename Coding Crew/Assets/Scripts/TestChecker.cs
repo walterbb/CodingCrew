@@ -18,6 +18,8 @@ public class TestChecker : MonoBehaviour
     private bool[] Q3Picked = new bool[] { false, false, false, false };
     private bool[] Q4Picked = new bool[] { false, false, false, false };
 
+	private bool[] falseList = new bool[] { false, false, false, false };
+
     private bool Q1Correct,Q2Correct,Q3Correct,Q4Correct;
 
     public float percentCorrect = 0;
@@ -212,10 +214,7 @@ public class TestChecker : MonoBehaviour
 
     public void Q1Select()
     {
-        for (int i = 0; i < 4; i++)
-        {
-            Q1Picked[i] = false;
-        }
+		Q1Picked = falseList;
 
         if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 1"))
         {
@@ -237,12 +236,9 @@ public class TestChecker : MonoBehaviour
 
     public void Q2Select()
     {
-        for (int i = 0; i < 4; i++)
-        {
-            Q2Picked[i] = false;
-        }
+		Q2Picked = falseList;
 
-        if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 1"))
+		if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 1"))
         {
             Q2Picked[0] = true;
         }
@@ -262,12 +258,9 @@ public class TestChecker : MonoBehaviour
 
     public void Q3Select()
     {
-        for (int i = 0; i < 4; i++)
-        {
-            Q3Picked[i] = false;
-        }
+		Q3Picked = falseList;
 
-        if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 1"))
+		if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 1"))
         {
             Q3Picked[0] = true;
         }
@@ -287,12 +280,9 @@ public class TestChecker : MonoBehaviour
 
     public void Q4Select()
     {
-        for (int i = 0; i < 4; i++)
-        {
-            Q4Picked[i] = false;
-        }
+		Q4Picked = falseList;
 
-        if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 1"))
+		if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 1"))
         {
             Q4Picked[0] = true;
         }
