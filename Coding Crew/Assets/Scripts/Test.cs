@@ -65,7 +65,7 @@ public class Test : MonoBehaviour
     {
         timeTillTest += Time.deltaTime;
 
-        timeTillTest = Mathf.Clamp(timeTillTest, 0f, waitTime);
+        timeTillTest = Mathf.Clamp(timeTillTest, 0f, timeForTest);
 
         timerSlider.value = timeForTest - timeTillTest;
 

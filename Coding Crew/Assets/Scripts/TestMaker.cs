@@ -9,53 +9,53 @@ public class TestMaker : MonoBehaviour
     public GameObject allTest;
     public TestChecker tc;
 
-    private int Qnum = 0;
+    private int Qnum;
     
     public Text question1;
     public List<Text> answersText1;
     private string[] Q1Questions = new string[] { "What is 4 + 3?", "What is blue + red?", "What Mr. Willis' favorite movie"};
-    public readonly string[] q1answer1 =
-        new string[] {"70","1","7","12"};
-    public readonly string[] q1answer2 =
-        new string[] { "Purple", "Pink", "Green", "Yellow" };
-    public readonly string[] q1answer3 =
-        new string[] { "Ponyo", "Frozen", "Finding Nemo", "Lion King" };
+        public readonly string[] q1answer1 =
+            new string[] {"70","1","7","12"};
+        public readonly string[] q1answer2 =
+            new string[] { "Purple", "Pink", "Green", "Yellow" };
+        public readonly string[] q1answer3 =
+            new string[] { "Ponyo", "Frozen", "Finding Nemo", "Lion King" };
 
     public Text question2;
     public List<Text> answersText2;
     private string[] Q2Questions = new string[] { "What is the date?", "Where is Oregon in the U.S?", "What does MWIS stand for?" };
-    public readonly string[] q2answer1 =
-        new string[] { "June 12th", "November 15th", "November 5th", "June 14th"};
-    public readonly string[] q2answer2 =
-        new string[] { "North West", "South East", "Not in the U.S", "North East" };
-    public readonly string[] q2answer3 =
-        new string[] { "Mr. Willis Is Cool", "Mr. Willis Invented Cool", "Math Work Is Super", "Math Will Impower Students" };
+        public readonly string[] q2answer1 =
+            new string[] { "June 12th", "November 15th", "November 5th", "June 14th"};
+        public readonly string[] q2answer2 =
+            new string[] { "North West", "South East", "Not in the U.S", "North East" };
+        public readonly string[] q2answer3 =
+            new string[] { "Mr. Willis Is Cool", "Mr. Willis Invented Cool", "Math Work Is Super", "Math Will Impower Students" };
 
     public Text question3;
     public List<Text> answersText3;
-    private string[] Q3Questions = new string[] { "How many vehichles are outside?", "% =  X What is X?", "Word Of The Day?" };
-    public readonly string[] q3answer1 =
-        new string[] { "3", "10", "0", "1" };
-    public readonly string[] q3answer2 =
-        new string[] { "2", "34", "12", "43" };
-    public readonly string[] q3answer3 =
-        new string[] { "invisible", "invincible", "important", "inconsequential" };
+    private string[] Q3Questions = new string[] { "How many vehichles are outside?", "% = Z*2 What is %?", "Word Of The Day?" };
+        public readonly string[] q3answer1 =
+            new string[] { "3", "10", "0", "1" };
+        public readonly string[] q3answer2 =
+            new string[] { "2", "34", "12", "43" };
+        public readonly string[] q3answer3 =
+            new string[] { "invisible", "invincible", "important", "inconsequential" };
 
     public Text question4;
     public List<Text> answersText4;
-    private string[] Q4Questions = new string[] { "How many Posters are in the room?", "X + Y = 10, what is X equal to?", "When is Luke's birthday?" };
-    public readonly string[] q4answer1 =
-        new string[] { "0", "5", "10", "11" };
-    public readonly string[] q4answer2 =
-        new string[] { "13", "-5", "10", "392" };
-    public readonly string[] q4answer3 =
-        new string[] { "July 6th", "June 12th", "October 4th", "July 16th" };
+    private string[] Q4Questions = new string[] { "How many Posters are in the room?", "X + Y = 10, what is X equal to?", "When is Mr.Willis' birthday?" };
+        public readonly string[] q4answer1 =
+            new string[] { "0", "5", "10", "11" };
+        public readonly string[] q4answer2 =
+            new string[] { "13", "-5", "10", "392" };
+        public readonly string[] q4answer3 =
+            new string[] { "July 6th", "June 12th", "October 4th", "July 16th" };
 
     // Start is called before the first frame update
     void OnEnable()
     {
-        Qnum = NextDay.nextDay.day - 1;
-        Debug.Log("QNUM = " + Qnum);
+        Qnum = PlayerPrefs.GetInt("Day") - 1;
+        //Debug.Log("QNUM = " + Qnum + " AND PF =" + PlayerPrefs.GetInt("Day"));
 
         Question1Set();
         Question2Set();

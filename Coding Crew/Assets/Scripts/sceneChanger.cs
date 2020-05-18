@@ -16,6 +16,7 @@ public class sceneChanger : MonoBehaviour
 
     IEnumerator ClassLoad()
     {
+        PlayerPrefs.SetInt("Day", 1);
         anim.SetBool("play", true);
         yield return new WaitForSeconds(1);
         anim.SetBool("play", false);

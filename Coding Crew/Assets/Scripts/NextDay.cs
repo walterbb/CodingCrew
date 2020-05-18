@@ -7,27 +7,26 @@ public class NextDay : MonoBehaviour
 {
     public static NextDay nextDay;
 
-    public int day;
-
     public void Start()
     {
         nextDay = this;
-        day = 1;
     }
 
     // Start is called before the first frame update
     public void SceneSwitch()
     {
-        day++;
+        PlayerPrefs.SetInt("Day", PlayerPrefs.GetInt("Day") + 1);
+        Debug.Log(PlayerPrefs.GetInt("Day"));
 
-        switch (day)
-        {
-            case 2:
-                SceneManager.LoadScene("LClassroom2");
-                break;
-            case 3:
-                SceneManager.LoadScene("LClassroom3");
-                break;
-        }
+        ChooseScene();
+    }
+
+    private void ChooseScene()
+    {
+        if(PlayerPrefs.GetInt("Day") == 2)
+            SceneManager.LoadScene("LClassroom2");
+        else if (PlayerPrefs.GetInt("Day") == 3)
+            SceneManager.LoadScene("LClassroom3");
+
     }
 }

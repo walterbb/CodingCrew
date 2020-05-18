@@ -20,7 +20,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GradeCheck.unity
     guid: f6805ed966b51448c9247756b5ddd585
-  - enabled: 1
-    path: Assets/Scenes/Classroom.unity
-    guid: 4df8fcf9eb00aa745a522d28b9c7daaf
   m_configObjects: {}
