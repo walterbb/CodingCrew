@@ -128,7 +128,8 @@ public class Test : MonoBehaviour
         pointer.SetActive(false);
         TestActive = true;
         mainCam.transform.rotation = Quaternion.Euler(new Vector3(90f,0f,0f));
-        mainCam.transform.position = new Vector3(-3.2f, 1.87f, -1.43f);
+        //mainCam.transform.position = new Vector3(-3.2f, 1.87f, -1.43f);
+        mainCam.transform.position = new Vector3(-3.319f, 1.819f, -1.542f);
         mainCam.fieldOfView = 31f;
 
         Cursor.lockState = CursorLockMode.Confined;
