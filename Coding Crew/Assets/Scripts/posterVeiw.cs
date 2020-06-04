@@ -13,6 +13,7 @@ public class posterVeiw : MonoBehaviour
     public bool posterOpen;
 
     public Test test;
+    public WakeUpManager wakeUpM;
 
     // Start is called before the first frame update
     void Start()
@@ -20,8 +21,15 @@ public class posterVeiw : MonoBehaviour
         posterOpen = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
+    {
+        if(wakeUpM.wakeUp)
+        {
+            PosterLook();
+        }
+    }
+
+    void PosterLook()
     {
         RaycastHit hit;
 

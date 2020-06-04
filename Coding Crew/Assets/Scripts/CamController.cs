@@ -11,6 +11,9 @@ public class CamController : MonoBehaviour
 
     float xRot, yRot = 0f;
 
+    public float yClamp;
+    public float xClampUp, xClampDown;
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -34,8 +37,8 @@ public class CamController : MonoBehaviour
                 yRot += mouseX;
 
                 //limits verticle rotation to not look behind
-                xRot = Mathf.Clamp(xRot, -90f, 90f);
-                yRot = Mathf.Clamp(yRot, -170f, 170f);
+                xRot = Mathf.Clamp(xRot, xClampUp, xClampDown);
+                yRot = Mathf.Clamp(yRot, -yClamp, yClamp);
 
                 //local rotation used bc clamping is needed
                 transform.localRotation = Quaternion.Euler(xRot, yRot, 0);

@@ -9,7 +9,6 @@ using UnityEngine.EventSystems;
 
 public class Test : MonoBehaviour
 {
-
     public bool TestActive;
     public GameObject pointer;
     public Camera mainCam;
@@ -33,10 +32,10 @@ public class Test : MonoBehaviour
     void Start()
     {
         pointer.SetActive(true);
-        mainCam.transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
+        mainCam.transform.rotation = Quaternion.Euler(new Vector3(35f, 0f, 0f));
         mainCam.transform.position = new Vector3(-3.2f, 1.48f, -2f);
         mainCam.fieldOfView = 75f;
-
+        
         timerSlider.maxValue = waitTime;
     }
 
@@ -67,7 +66,7 @@ public class Test : MonoBehaviour
     {
         timeTillTest += Time.deltaTime;
 
-        timeTillTest = Mathf.Clamp(timeTillTest, 0f, waitTime);
+        timeTillTest = Mathf.Clamp(timeTillTest, 0f, timeForTest);
 
         timerSlider.value = timeForTest - timeTillTest;
 
@@ -115,11 +114,12 @@ public class Test : MonoBehaviour
     {
         TestActive = false;
         pointer.SetActive(true);
-        mainCam.transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
+        mainCam.transform.rotation = Quaternion.Euler(new Vector3(35f, 0f, 0f));
         mainCam.transform.position = new Vector3(-3.2f, 1.48f, -2f);
         mainCam.fieldOfView = 75f;
 
         Cursor.lockState = CursorLockMode.Locked;
+        
         Cursor.visible = false;
     }
 

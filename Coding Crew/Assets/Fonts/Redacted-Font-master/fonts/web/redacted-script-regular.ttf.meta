@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 8d9baa2b88aa4472f971a729247880f4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Redacted Script
+  fontNames:
+  - Redacted Script
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 6e408a225b9d64de8b0277ba3fa491c2, type: 3}
+  - {fileID: 12800000, guid: 2cb23f97564c8486b8b57d777051a5ba, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

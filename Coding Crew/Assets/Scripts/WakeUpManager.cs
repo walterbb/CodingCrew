@@ -15,10 +15,18 @@ public class WakeUpManager : MonoBehaviour
 
 	public GameObject blackPanel;
 
+	public CamController cam;
+
 	void Start()
     {
 		delayTimer = 0f;
 		wakeUp = false;
+
+		blackPanel.SetActive(true);
+
+		cam.yClamp = 5f;
+		cam.xClampDown = 40f;
+		cam.xClampUp = 30f;
 
 		videoPlayer = GetComponent<VideoPlayer>();
 		clipPlayed = false;
@@ -33,6 +41,9 @@ public class WakeUpManager : MonoBehaviour
 		{
 			videoPlayer.Play();
 			clipPlayed = true;
+			cam.yClamp = 50f;
+			cam.xClampDown = 40f;
+			cam.xClampUp = -35f;
 		}
 
 		if(delayTimer >= sleepDelay + 0.1f) // Toggle Black Screen off after a slight delay
@@ -43,6 +54,9 @@ public class WakeUpManager : MonoBehaviour
 		if(delayTimer >= sleepDelay + videoPlayer.clip.length)
 		{
 			wakeUp = true;
+			cam.yClamp = 170f;
+			cam.xClampDown = 65f;
+			cam.xClampUp = -40f;
 		}
     }
 }

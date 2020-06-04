@@ -19,38 +19,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 1440
-<<<<<<< HEAD
-    height: 717
-  m_MinSize: {x: 681, y: 498}
-  m_MaxSize: {x: 14004, y: 14048}
-  vertical: 0
-  controlID: 86
-=======
-    height: 746
-  m_MinSize: {x: 681, y: 474}
-  m_MaxSize: {x: 14000, y: 14024}
-  vertical: 0
-  controlID: 6637
->>>>>>> master
-=======
-    width: 1862
-    height: 931
-  m_MinSize: {x: 683, y: 498}
-  m_MaxSize: {x: 14004, y: 14048}
-  vertical: 0
-  controlID: 4279
->>>>>>> LukeMenu
-=======
     width: 1920
-    height: 947
+    height: 897
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 713
->>>>>>> WaltWakeUp
+  controlID: 84
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -72,64 +46,25 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 286
-    y: 22
-    width: 860
-<<<<<<< HEAD
-    height: 404
-=======
-    height: 421
->>>>>>> master
-=======
-    x: 494
-    y: 52
-    width: 960
-    height: 557
->>>>>>> LukeMenu
-=======
-    x: 381
-    y: 22
+    x: -1541
+    y: -822
     width: 1148
-    height: 549
->>>>>>> WaltWakeUp
+    height: 523
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_HBaseRangeMin: -344
-    m_HBaseRangeMax: 344
-    m_VBaseRangeMin: -154.8
-    m_VBaseRangeMax: 154.8
-=======
-    m_HBaseRangeMin: -430
-    m_HBaseRangeMax: 430
-    m_VBaseRangeMin: -202
-    m_VBaseRangeMax: 202
->>>>>>> master
-=======
-    m_HBaseRangeMin: -480
-    m_HBaseRangeMax: 480
-    m_VBaseRangeMin: -270
-    m_VBaseRangeMax: 270
->>>>>>> LukeMenu
-=======
-    m_HBaseRangeMin: -574
-    m_HBaseRangeMax: 574
-    m_VBaseRangeMin: -266
-    m_VBaseRangeMax: 266
->>>>>>> WaltWakeUp
+    m_HBaseRangeMin: -450
+    m_HBaseRangeMax: 450
+    m_VBaseRangeMin: -253
+    m_VBaseRangeMax: 253
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -147,77 +82,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-<<<<<<< HEAD
-<<<<<<< HEAD
-      width: 860
-<<<<<<< HEAD
-      height: 387
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 430, y: 193.5}
-=======
-      height: 404
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 430, y: 202}
->>>>>>> master
-=======
-      width: 960
-      height: 540
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 480, y: 270}
->>>>>>> LukeMenu
-=======
       width: 1148
-      height: 532
+      height: 506
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 574, y: 266}
->>>>>>> WaltWakeUp
+    m_Translation: {x: 574, y: 253}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-      x: -430
-<<<<<<< HEAD
-      y: -193.5
-      width: 860
-      height: 387
-=======
-      y: -202
-      width: 860
-      height: 404
->>>>>>> master
-=======
-      x: -480
-      y: -270
-      width: 960
-      height: 540
->>>>>>> LukeMenu
-=======
       x: -574
-      y: -266
+      y: -253
       width: 1148
-      height: 532
->>>>>>> WaltWakeUp
+      height: 506
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_LastWindowPixelSize: {x: 1075, y: 505}
-=======
-  m_LastWindowPixelSize: {x: 860, y: 421}
->>>>>>> master
-=======
-  m_LastWindowPixelSize: {x: 960, y: 557}
->>>>>>> LukeMenu
-=======
-  m_LastWindowPixelSize: {x: 1148, y: 549}
->>>>>>> WaltWakeUp
+  m_LastWindowPixelSize: {x: 1148, y: 523}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -241,38 +124,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 1148
-<<<<<<< HEAD
-    height: 717
-  m_MinSize: {x: 404, y: 498}
-  m_MaxSize: {x: 10002, y: 14048}
-  vertical: 1
-  controlID: 67
-=======
-    height: 746
-  m_MinSize: {x: 406, y: 474}
-  m_MaxSize: {x: 10000, y: 14024}
-  vertical: 1
-  controlID: 6638
->>>>>>> master
-=======
-    width: 1412
-    height: 931
-  m_MinSize: {x: 406, y: 498}
-  m_MaxSize: {x: 10002, y: 14048}
-  vertical: 1
-  controlID: 4280
->>>>>>> LukeMenu
-=======
     width: 1531
-    height: 947
+    height: 897
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 714
->>>>>>> WaltWakeUp
+  controlID: 85
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -292,38 +149,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 1148
-<<<<<<< HEAD
-    height: 428
-  m_MinSize: {x: 404, y: 224}
-  m_MaxSize: {x: 8004, y: 4024}
-  vertical: 0
-  controlID: 68
-=======
-    height: 445
-  m_MinSize: {x: 406, y: 224}
-  m_MaxSize: {x: 8006, y: 4024}
-  vertical: 0
-  controlID: 6515
->>>>>>> master
-=======
-    width: 1412
-    height: 577
-  m_MinSize: {x: 406, y: 224}
-  m_MaxSize: {x: 8006, y: 4024}
-  vertical: 0
-  controlID: 4259
->>>>>>> LukeMenu
-=======
     width: 1531
-    height: 573
+    height: 543
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 693
->>>>>>> WaltWakeUp
+  controlID: 65
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -341,30 +172,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 284
-<<<<<<< HEAD
-    height: 428
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-=======
-    height: 445
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
->>>>>>> master
-=======
-    width: 448
-    height: 577
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> LukeMenu
-=======
     width: 379
-    height: 573
+    height: 543
   m_MinSize: {x: 202, y: 224}
   m_MaxSize: {x: 4002, y: 4024}
->>>>>>> WaltWakeUp
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -391,50 +202,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 7.2000003
-    y: 80.8
-    width: 282
-    height: 408
-=======
-    x: 8
-    y: 81
-    width: 282
-    height: 425
->>>>>>> master
-=======
-    x: 46
-    y: 52
-    width: 446
-    height: 557
->>>>>>> LukeMenu
-=======
-    x: 1920
-    y: 116
+    x: -1920
+    y: -822
     width: 377
-    height: 553
->>>>>>> WaltWakeUp
+    height: 523
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      m_ExpandedIDs: defbffff
-=======
-      m_ExpandedIDs: 0abeffff12bfffff50c7ffffdcfbffffdefbffff78110000b2110000
->>>>>>> master
-=======
-      m_ExpandedIDs: dc60ffffea66ffffea74fffffe75ffff3076ffffd681ffff56420000e6420000fc420000
->>>>>>> LukeMenu
-=======
-      m_ExpandedIDs: defbffff
->>>>>>> WaltWakeUp
+      m_ExpandedIDs: ced6ffff2cf8ffff3cf8ffff4af8ffff9cf8ffffacf8ffffdefbffffaa120000c4130000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -450,14 +228,14 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 5}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
-  m_WindowGUID: 881ebf0a8bf34574aadffcfa335af690
+  m_WindowGUID: e24799bf07b45a3499bab6fd7817718b
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -473,32 +251,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 284
-=======
     x: 379
->>>>>>> WaltWakeUp
     y: 0
     width: 1152
-    height: 573
+    height: 543
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
-=======
-    x: 448
-    y: 0
-    width: 964
-    height: 577
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> LukeMenu
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 8}
   - {fileID: 2}
   - {fileID: 9}
   m_Selected: 1
-  m_LastSelected: 2
+  m_LastSelected: 0
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -515,64 +280,24 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
-      type: 0}
+    m_Image: {fileID: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 291.2
-    y: 80.8
-    width: 860
-    height: 408
-=======
-    x: 292
-    y: 81
-    width: 860
-    height: 425
->>>>>>> master
-=======
-    x: 413
-    y: 52
-    width: 1113
-    height: 535
->>>>>>> LukeMenu
-=======
-    x: 2299
-    y: 116
+    x: -1541
+    y: -822
     width: 1148
-    height: 553
->>>>>>> WaltWakeUp
+    height: 523
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_WindowGUID: 0b469671a331fe0429632b15de0cc874
+  m_WindowGUID: 251d49a20a447fd49a788055484556e6
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: {x: 2.3709073, y: 0.5866381, z: -1.5258923}
+    m_Target: {x: -1.8136759, y: 2.516683, z: 1.9965496}
     speed: 2
-    m_Value: {x: 2.3709073, y: 0.5866381, z: -1.5258923}
-=======
-    m_Target: {x: 3.2245715, y: 0.38657928, z: 8.293879}
-    speed: 2
-    m_Value: {x: 3.2245715, y: 0.38657928, z: 8.293879}
->>>>>>> master
-=======
-    m_Target: {x: 652.2979, y: 227.41217, z: 622.6814}
-    speed: 2
-    m_Value: {x: 652.2979, y: 227.41217, z: 622.6814}
->>>>>>> LukeMenu
-=======
-    m_Target: {x: -0.40573466, y: 1.8737795, z: -0.36206996}
-    speed: 2
-    m_Value: {x: -0.40573466, y: 1.8737795, z: -0.36206996}
->>>>>>> WaltWakeUp
+    m_Value: {x: -1.8136759, y: 2.516683, z: 1.9965496}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -600,41 +325,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: {x: 0.015484743, y: -0.96468395, z: 0.058257863, w: 0.25641987}
-=======
-    m_Target: {x: -0.092554554, y: 0.85513145, z: -0.16384678, w: -0.48305085}
->>>>>>> WaltWakeUp
+    m_Target: {x: -0.040405717, y: -0.1383416, z: 0.005648688, w: -0.9895439}
     speed: 2
-    m_Value: {x: -0.092554554, y: 0.85513145, z: -0.16384678, w: -0.48305085}
+    m_Value: {x: -0.040405717, y: -0.1383416, z: 0.005648688, w: -0.9895439}
   m_Size:
-    m_Target: 1.944885
+    m_Target: 2.137939
     speed: 2
-<<<<<<< HEAD
-    m_Value: -5.9196453
-=======
-    m_Target: {x: 0.11415565, y: -0.15432192, z: 0.017954739, w: 0.98123944}
-    speed: 2
-    m_Value: {x: 0.11415565, y: -0.15432192, z: 0.017954739, w: 0.98123944}
-  m_Size:
-    m_Target: 8.709987
-    speed: 2
-    m_Value: 8.709987
->>>>>>> master
-=======
-    m_Target: {x: 0.0288134, y: -0.004494712, z: 0.00013018194, w: 0.9995747}
-    speed: 2
-    m_Value: {x: 0.0288134, y: -0.004494712, z: 0.00013018194, w: 0.9995747}
-  m_Size:
-    m_Target: 1398.0547
-    speed: 2
-    m_Value: 1398.0547
->>>>>>> LukeMenu
-=======
-    m_Value: 1.944885
->>>>>>> WaltWakeUp
+    m_Value: 2.137939
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -667,17 +364,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 413
-    y: 52
-    width: 1113
-    height: 535
-=======
-    x: 384
-    y: 81
-    width: 1138
-    height: 543
->>>>>>> WaltWakeUp
+    x: 468
+    y: 181
+    width: 973
+    height: 501
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &10
 MonoBehaviour:
@@ -695,33 +385,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 428
-    width: 1148
-    height: 289
-=======
-    y: 445
-    width: 1148
-    height: 301
->>>>>>> master
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
-=======
-    y: 577
-    width: 1412
+    y: 543
+    width: 1531
     height: 354
   m_MinSize: {x: 232, y: 274}
   m_MaxSize: {x: 10002, y: 10024}
->>>>>>> LukeMenu
-=======
-    y: 573
-    width: 1531
-    height: 374
-  m_MinSize: {x: 232, y: 274}
-  m_MaxSize: {x: 10002, y: 10024}
->>>>>>> WaltWakeUp
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -749,31 +417,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 7.2000003
-    y: 508.80002
-    width: 1146
-    height: 269
-=======
-    x: 8
-    y: 526
-    width: 1146
-    height: 281
->>>>>>> master
-=======
-    x: 46
-    y: 629
-    width: 1410
-    height: 334
->>>>>>> LukeMenu
-=======
-    x: 1920
-    y: 689
+    x: -1920
+    y: -279
     width: 1529
-    height: 354
->>>>>>> WaltWakeUp
+    height: 334
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -787,49 +434,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Fonts/Redacted-Font-master/fonts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Fonts/Redacted-Font-master/fonts
   m_LastFoldersGridSize: -1
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_LastProjectPath: D:\Code\CodingCrew\Coding Crew
-=======
-  m_LastProjectPath: D:\Unity Projects\Walt Bringenberg\CodingCrew\Coding Crew
->>>>>>> master
-=======
-  m_LastProjectPath: D:\Unity Projects\Luke Woodland\CodingCrew\Coding Crew
->>>>>>> LukeMenu
-=======
-  m_LastProjectPath: E:\Unity\CodingCrew\Coding Crew
->>>>>>> WaltWakeUp
+  m_LastProjectPath: /Users/lukewoodland/Documents/_Unity/CodingCrew/Coding Crew
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_SelectedIDs: 000a0000
-    m_LastClickedID: 2560
-=======
-    m_SelectedIDs: a80b0000
-    m_LastClickedID: 2984
->>>>>>> master
-    m_ExpandedIDs: 00000000000a0000020e0000d00f000000ca9a3b
-=======
-    m_SelectedIDs: d83f0000
-    m_LastClickedID: 16344
-    m_ExpandedIDs: 00000000d83f000084410000be41000000ca9a3b
->>>>>>> LukeMenu
-=======
-    m_SelectedIDs: cc260000
-    m_LastClickedID: 9932
-    m_ExpandedIDs: 00000000cc260000242900002c2b000000ca9a3b
->>>>>>> WaltWakeUp
+    m_SelectedIDs: 8a010100
+    m_LastClickedID: 65930
+    m_ExpandedIDs: 00000000360a0000860b0000ae0e00008e01010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -845,7 +463,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -857,19 +475,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000000a0000020e0000d00f0000
-=======
-    m_ExpandedIDs: 00000000000a0000020e0000d00f000000ca9a3b
->>>>>>> master
-=======
-    m_ExpandedIDs: 00000000d83f000084410000be41000000ca9a3b
->>>>>>> LukeMenu
-=======
-    m_ExpandedIDs: 00000000cc260000242900002c2b000000ca9a3b
->>>>>>> WaltWakeUp
+    m_ExpandedIDs: 00000000360a0000ae0e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -894,22 +500,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_SelectedInstanceIDs: 54a2ffff
-    m_LastClickedInstanceID: -23980
-=======
-    m_SelectedInstanceIDs: dc60ffff
-    m_LastClickedInstanceID: -40740
->>>>>>> LukeMenu
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c623000000000000
-=======
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 84150000
+    m_LastClickedInstanceID: 5508
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
->>>>>>> WaltWakeUp
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -925,7 +519,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -957,10 +551,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 644
-    width: 1516
-    height: 348
+    x: -1920
+    y: -279
+    width: 1529
+    height: 334
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &13
 MonoBehaviour:
@@ -977,32 +571,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 1148
-    y: 0
-    width: 292
-<<<<<<< HEAD
-    height: 717
-=======
-    height: 746
->>>>>>> master
-=======
-    x: 1412
-    y: 0
-    width: 450
-    height: 931
->>>>>>> LukeMenu
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-=======
     x: 1531
     y: 0
     width: 389
-    height: 947
+    height: 897
   m_MinSize: {x: 277, y: 74}
   m_MaxSize: {x: 4002, y: 4024}
->>>>>>> WaltWakeUp
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -1029,31 +603,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 1155.2001
-    y: 80.8
-    width: 290
-    height: 697
-=======
-    x: 1156
-    y: 81
-    width: 290
-    height: 726
->>>>>>> master
-=======
-    x: 1458
-    y: 52
-    width: 448
-    height: 911
->>>>>>> LukeMenu
-=======
-    x: 3451
-    y: 116
+    x: -389
+    y: -822
     width: 387
-    height: 927
->>>>>>> WaltWakeUp
+    height: 877
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
