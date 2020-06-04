@@ -29,41 +29,7 @@ public class TestChecker : MonoBehaviour
         instance = this;
     }
 
-<<<<<<< HEAD
-    public void Update()
-    {
-        Q1TestCheck();
-        Q2TestCheck();
-        Q3TestCheck();
-        Q4TestCheck();
 
-        int numCorrect = 0;
-
-        if(Q1Correct)
-        {
-            numCorrect++;
-        }
-
-        if (Q2Correct)
-        {
-            numCorrect++;
-        }
-
-        if (Q3Correct)
-        {
-            numCorrect++;
-        }
-
-        if (Q4Correct)
-        {
-            numCorrect++;
-        }
-
-
-        percentCorrect = (numCorrect / 4f) * 100f;
-
-        print(percentCorrect.ToString("F0") + "%");
-=======
     public void Update()
     {
         Q1TestCheck();
@@ -94,7 +60,6 @@ public class TestChecker : MonoBehaviour
         }
 
         percentCorrect = (numCorrect / 4f) * 100f;
->>>>>>> LukeDays
     }
 
     void Q1TestCheck()
