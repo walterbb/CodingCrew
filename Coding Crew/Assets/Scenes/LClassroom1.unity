@@ -3203,6 +3203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepDelay: 3
+  delayTimer: 0
   wakeUp: 0
   blackPanel: {fileID: 476213295}
   cam: {fileID: 1813291516}

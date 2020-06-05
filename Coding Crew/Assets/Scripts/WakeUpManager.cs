@@ -6,7 +6,7 @@ using UnityEngine.Video;
 public class WakeUpManager : MonoBehaviour
 {
 	public float sleepDelay;
-	private float delayTimer;
+	public float delayTimer;
 
 	public bool wakeUp;
 
@@ -46,7 +46,7 @@ public class WakeUpManager : MonoBehaviour
 			cam.xClampUp = -35f;
 		}
 
-		if(delayTimer >= sleepDelay + 0.1f) // Toggle Black Screen off after a slight delay
+		if(delayTimer >= sleepDelay + 0.4f) // Toggle Black Screen off after a slight delay
 		{
 			blackPanel.SetActive(false);
 		}
