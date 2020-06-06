@@ -12,10 +12,12 @@ public class WakeUpManager : MonoBehaviour
 
 	private VideoPlayer videoPlayer;
 	private bool clipPlayed;
+	private AudioSource bellSource;
+	private bool bellPlayed;
 
 	public GameObject blackPanel;
 
-	public CamController cam;
+	public CamController cam; 
 
 	void Start()
     {
@@ -30,12 +32,20 @@ public class WakeUpManager : MonoBehaviour
 
 		videoPlayer = GetComponent<VideoPlayer>();
 		clipPlayed = false;
+		bellSource = GetComponent<AudioSource>();
+		bellPlayed = false;
     }
 
  
     void Update()
     {
 		delayTimer += Time.deltaTime;
+
+		if(delayTimer >= sleepDelay - (bellSource.clip.length - 2.0f) && !bellPlayed) // Play the bell sound
+		{
+			bellSource.Play();
+			bellPlayed = true;
+		}
 
 		if(delayTimer >= sleepDelay && !clipPlayed) // Start Video Playback
 		{

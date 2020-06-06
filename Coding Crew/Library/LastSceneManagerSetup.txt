@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Menu.unity
+=======
+- path: Assets/Scenes/WClassroom.unity
+>>>>>>> WaltTextSystem
   isLoaded: 1
   isActive: 1
