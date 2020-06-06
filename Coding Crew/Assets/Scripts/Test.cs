@@ -9,6 +9,9 @@ using UnityEngine.EventSystems;
 
 public class Test : MonoBehaviour
 {
+
+    public GameObject allTest;
+
     public bool TestActive;
     public GameObject pointer;
     public Camera mainCam;
@@ -54,7 +57,16 @@ public class Test : MonoBehaviour
 			 AfterStart();
 			}
 		}
-		
+
+        if (TestActive)
+        {
+            allTest.SetActive(true);
+        }
+        else if (!TestActive)
+        {
+            allTest.SetActive(false);
+        }
+
     }
 
     public void TestOver()

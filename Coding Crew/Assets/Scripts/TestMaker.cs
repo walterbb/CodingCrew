@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class TestMaker : MonoBehaviour
 {
-    public Test test;
-    public GameObject allTest;
+    
     public TestChecker tc;
 
     private int Qnum;
@@ -36,18 +35,27 @@ public class TestMaker : MonoBehaviour
     public List<Text> answersText4;
 
     int Qcount = 0;
-   
+
+    List<int> Rands = new List<int>();
     // Start is called before the first frame update
     void Start()
     {
-        //Qnum = PlayerPrefs.GetInt("Day") - 1;
+        PlayerPrefs.SetInt("randnums", (PlayerPrefs.GetInt("Day") - 1) * 4);
+        for (int i = 0; i < PlayerPrefs.GetInt("randnums"); i++)
+        {
+            int temp = PlayerPrefs.GetInt("randnums" + i);
+            Questions.Remove(Questions[PlayerPrefs.GetInt("randnums"+i)]);
+            Answers.Remove(Answers[PlayerPrefs.GetInt("randnums" + i)]);
+            Debug.Log("randnums" + i+ ": " + temp);
+        }
         //Debug.Log("QNUM = " + Qnum + " AND PF =" + PlayerPrefs.GetInt("Day"));
-
+        
+        
         for (Qcount = 0; Qcount < 4; Qcount++)
         {
             QuestionSet();
-            
         }
+
     }
 
 
@@ -101,20 +109,29 @@ public class TestMaker : MonoBehaviour
 
         Questions.Remove(Questions[rand]);
         Answers.Remove(Answers[rand]);
+
+        
+        Rands.Add(rand);
+
+        int totalrands = PlayerPrefs.GetInt("randnums");
+        PlayerPrefs.SetInt("randnums" + (Qcount + totalrands), rand);
+        Debug.Log(rand);
+        Debug.Log("randnums" + (Qcount + totalrands) + ": " + PlayerPrefs.GetInt("randnums" + (Qcount + totalrands), rand));
+
+        //PlayerPrefs.SetInt("randnums", totalrands);
+
+        //for (int i = 0; i < Rands.Count; i++)
+        //{
+        //    PlayerPrefs.SetInt("randnums" + i+ totalrands, Rands[i]);
+        //}
+
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        if(test.TestActive)
-        {
-            allTest.SetActive(true);
-        }
-        else if (!test.TestActive)
-        {
-            allTest.SetActive(false);
-        }
+      
     }
 
 }
