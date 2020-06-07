@@ -12,13 +12,18 @@ public class TestMaker : MonoBehaviour
 
     public List<string> Questions = new List<string> {"What is 4 + 3?", "What is blue + red?", "What Mr. Willis' favorite movie", "What is the date?",
         "Where is Oregon in the U.S?", "What does MWIS stand for?", "How many vehichles are outside?", "% = Z*2 What is %?", "Word Of The Day?",
-        "How many Posters are in the room?", "X + Y = 10, what is X equal to?", "When is Mr.Willis' birthday?"};
+        "How many Posters are in the room?", "X + Y = 10, what is X equal to?", "When is Mr.Willis' birthday?", "What color is Mr. Willis' shirt?", "What pet does Mr. Willis' not own?", "What is  3 + 2/9 * 0",
+        "What is on Mr. Willis' desk?", "What is the capital of Norway?", "How many miles is the Earth from the Sun?", "Who isn't a creator of the game?", "Which is not a stage name?", "How many tree stumps are outside?",
+        "What is Mr. Willis' first name?"};
 
-    public List<string[]> Answers = new List<string[]> { new string[] { "70", "1", "7", "12" }, new string[] { "Purple", "Pink", "Green", "Yellow" },
-        new string[] { "Ponyo", "Frozen", "Finding Nemo", "Lion King" }, new string[] { "June 12th", "November 15th", "November 5th", "June 14th"},
+    public List<string[]> Answers = new List<string[]> { new string[] { "70", "20", "7", "12" }, new string[] { "Purple", "Pink", "Green", "Yellow" },
+        new string[] { "Ponyo", "Frozen", "Finding Nemo", "Lion King" }, new string[] { "June 21th", "November 15th", "November 5th", "November 4th"},
         new string[] { "North West", "South East", "Not in the U.S", "North East" }, new string[] { "Mr. Willis Is Cool", "Mr. Willis Invented Cool", "Math Work Is Super", "Math Will Impower Students" },
         new string[] { "3", "10", "0", "1" },new string[] { "2", "34", "12", "43" }, new string[] { "invisible", "invincible", "important", "inconsequential" },
-        new string[] { "0", "5", "10", "11" }, new string[] { "13", "-5", "10", "392" },new string[] { "July 6th", "June 12th", "October 4th", "July 16th" }};
+        new string[] { "0", "5", "10", "11" }, new string[] { "13", "-5", "10", "392" },new string[] { "July 6th", "June 12th", "October 4th", "July 16th" }, new string[] { "Blue", "Red", "Yellow", "Green" },
+        new string[] { "Dog", "Lemur", "Crocidile", "Monkey" }, new string[] { "3", "0", "2/3", ".245" }, new string[] { "Pencils", "Papers", "Apple", "Coffee Mug" },new string[] { "Oslo", "Burgen", "Lillehammer", "Kroger"},
+        new string[] { "94 Million", "6 Million", "2 Light Years", "84 Billion" }, new string[] { "Luke", "Walt", "Matthew", "Giuliano" }, new string[] { "Lady Gaga", "Jamie Foxx", "Katy Perry", "Kanye West" },
+        new string[] { "2", "5", "4", "1" }, new string[] { "Alan", "Arnold", "Adam", "Alex" }};
 
 
 
