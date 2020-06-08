@@ -30,7 +30,6 @@ public class TestChecker : MonoBehaviour
 
     public void Update()
     {
-
         int numCorrect = 0;
 
         if(Q1Correct)
@@ -66,6 +65,7 @@ public class TestChecker : MonoBehaviour
             if(playerAnswer1 == a)
             {
                 Q1Correct = true;
+                break;
             }
             else
             {
@@ -84,6 +84,7 @@ public class TestChecker : MonoBehaviour
             if (playerAnswer2 == a)
             {
                 Q2Correct = true;
+                break;
             }
             else
             {
@@ -102,6 +103,7 @@ public class TestChecker : MonoBehaviour
             if (playerAnswer3 == a)
             {
                 Q3Correct = true;
+                break;
             }
             else
             {
@@ -120,6 +122,7 @@ public class TestChecker : MonoBehaviour
             if (playerAnswer4 == a)
             {
                 Q4Correct = true;
+                break;
             }
             else
             {
