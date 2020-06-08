@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Menu.unity
-=======
-- path: Assets/Scenes/LClassroom1.unity
->>>>>>> WaltHighlight
+- path: Assets/Scenes/LClassroom2.unity
   isLoaded: 1
   isActive: 1
