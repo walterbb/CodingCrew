@@ -4360,11 +4360,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8684850639660414410, guid: 1a28cfa55adaba0438b370bd528ed8ee,
+        type: 3}
+      propertyPath: m_TargetCamera
+      value: 
+      objectReference: {fileID: 978089065}
     - target: {fileID: 8684850639660414411, guid: 1a28cfa55adaba0438b370bd528ed8ee,
         type: 3}
       propertyPath: blackPanel
       value: 
       objectReference: {fileID: 1048106435}
+    - target: {fileID: 8684850639660414411, guid: 1a28cfa55adaba0438b370bd528ed8ee,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 978089067}
     - target: {fileID: 8684850639660414413, guid: 1a28cfa55adaba0438b370bd528ed8ee,
         type: 3}
       propertyPath: m_Name
@@ -12557,7 +12567,7 @@ MonoBehaviour:
   posVeiw: {fileID: 978089068}
   timeTillObject: {fileID: 1132592999}
   timerSlider: {fileID: 1132593001}
-  waitTime: 5
+  waitTime: 60
   timeForTest: 30
   timeTillText: {fileID: 1660958565}
   TurnIn: {fileID: 1506754339}
