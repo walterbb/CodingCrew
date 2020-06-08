@@ -33,7 +33,7 @@ public class posterVeiw : MonoBehaviour
     {
         RaycastHit hit;
 
-        if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetKeyDown(KeyCode.Space))
         {
             if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 20))
             {
