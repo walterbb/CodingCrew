@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":887.434814453125,"y":773.527587890625,"z":-980.1383056640625},"rotation":{"x":0.013810534961521626,"y":-0.00000496969960295246,"z":-1.141149130745589e-8,"w":0.9999046325683594},"size":776.7738647460938,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":147.39846801757813,"y":-35.05982208251953,"z":227.15365600585938},"rotation":{"x":0.06491008400917053,"y":0.28624600172042849,"z":-0.019440442323684694,"w":0.9557573199272156},"size":275.1991882324219,"orthographic":false}
+>>>>>>> WaltHighlight
