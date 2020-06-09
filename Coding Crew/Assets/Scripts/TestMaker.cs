@@ -10,17 +10,17 @@ public class TestMaker : MonoBehaviour
 
     private int Qnum;
 
-    public List<string> Questions = new List<string> {"What is 4 + 3?", "What is blue + red?", "What Mr. Willis' favorite movie", "What is the date?",
-        "Where is Oregon in the U.S?", "What does MWIS stand for?", "How many vehichles are outside?", "% = Z*2 What is %?", "Word Of The Day?",
+    private List<string> Questions = new List<string> {"What is 4 + 3?", "What is blue + red?", "What Mr. Willis' favorite movie", "What is the date?",
+        "Where is Oregon in the U.S?", "Where do Giraffes live in the wild?", "How many vehichles are outside?", "% = Z*2 What is %?", "Word Of The Day?",
         "How many Posters are in the room?", "X + Y = 10, what is X equal to?", "When is Mr.Willis' birthday?", "What color is Mr. Willis' shirt?", "What pet does Mr. Willis' not own?", "What is  3 + 2/9 * 0",
         "What is on Mr. Willis' desk?", "What is the capital of Norway?", "How many miles is the Earth from the Sun?", "Who isn't a creator of the game?", "Which is not a stage name?", "How many tree stumps are outside?",
         "What is Mr. Willis' first name?"};
 
-    public List<string[]> Answers = new List<string[]> { new string[] { "70", "20", "7", "56" }, new string[] { "Purple", "Pink", "Green", "Yellow" },
-        new string[] { "Ponyo", "Frozen", "Finding Nemo", "Lion King" }, new string[] { "June 21th", "November 15th", "November 5th", "November 4th"},
-        new string[] { "North West", "South East", "Not in the U.S", "North East" }, new string[] { "Mr. Willis Is Cool", "Mr. Willis Invented Cool", "Math Work Is Super", "Math Will Impower Students" },
+    private List<string[]> Answers = new List<string[]> { new string[] { "70", "20", "7", "56" }, new string[] { "Purple", "Pink", "Green", "Yellow" },
+        new string[] { "Ponyo", "Frozen", "Finding Nemo", "Lion King" }, new string[] { "June 21th", "July 15th", "June 5th", "May 4th"},
+        new string[] { "North West", "South East", "Not in the U.S", "North East" }, new string[] { "Antarctica", "Africa", "Australia", "Greenland" },
         new string[] { "3", "10", "0", "1" },new string[] { "2", "34", "12", "43" }, new string[] { "invisible", "invincible", "important", "inconsequential" },
-        new string[] { "0", "5", "10", "11" }, new string[] { "13", "-5", "10", "392" },new string[] { "July 6th", "June 12th", "October 4th", "July 16th" }, new string[] { "Blue", "Red", "Yellow", "Green" },
+        new string[] { "0", "5", "7", "11" }, new string[] { "13", "-5", "6", "392" },new string[] { "July 6th", "June 12th", "July 4th", "July 16th" }, new string[] { "Blue", "Red", "Yellow", "Green" },
         new string[] { "Dog", "Lemur", "Crocidile", "Monkey" }, new string[] { "3", "0", "2/3", ".245" }, new string[] { "Pencils", "Papers", "Apple", "Coffee Mug" },new string[] { "Oslo", "Burgen", "Lillehammer", "Kroger"},
         new string[] { "94 Million", "6 Million", "2 Light Years", "84 Billion" }, new string[] { "Luke", "Walt", "Matthew", "Giuliano" }, new string[] { "Lady Gaga", "Jamie Foxx", "Katy Perry", "Kanye West" },
         new string[] { "2", "5", "4", "1" }, new string[] { "Alan", "Arnold", "Adam", "Alex" }};
@@ -28,8 +28,8 @@ public class TestMaker : MonoBehaviour
 
 	private List<string> answerInfo = new List<string>
 	{
-		"4 + 3 = 7", "Blue + Red = Purple", "Mr. Willis' favorite movie is Frozen", "The date is November 5th", "Oregon is located in the North West",
-		"MWIS stands for Math Will Impower Students", "Pluto is not a planet", "% = 12", "Word of the day: invincible",
+		"4 + 3 = 7", "Blue + Red = Purple", "Mr. Willis' favorite movie is Frozen", "The date is May 4th", "Oregon is located in the North West",
+		"Africa is the only continent where Giraffes live in the wild", "Pluto is not a planet", "% = 12", "Word of the day: invincible",
 		"The ocean is on average 2.3 miles deep", "X = 13", "Mr. Willis' birthday is June 12th", "Water boils at 100 Celcius", "Mr. Willis owns a Monkey, Crocodile and a Lemur",
 		"Ottowa is the capital of Canada", "There are 206 bones in the human body", "Oslo is the capital of Norway", "The earth is 94 Million miles from the sun",
 		"Created by: Luke, Walt, Matthew", "Yes! Kanye West is his real name.", "There are six sides on a cube", "Teacher of the Year: Alex Willis"
@@ -164,7 +164,7 @@ public class TestMaker : MonoBehaviour
 	{
 		List<Text> answerPosters = new List<Text>();
 		int boardCount = 0; 
-		int dialogCount = 0; if (PlayerPrefs.GetInt("Day") == 1) dialogCount = 1;
+		int dialogCount = 0; if (PlayerPrefs.GetInt("Day") == 1) dialogCount = 2;
 
 		// Fill answer information
 		for (int i = 0; i < 4; i++)
@@ -176,19 +176,29 @@ public class TestMaker : MonoBehaviour
 			{
 				board[boardCount].text = answerInfoCurrent[i];
 				boardCount++;
-			}
-			else if (rand == 3 && dialogCount < 2) // Dialog chance
+                Debug.Log("B "+ answerInfoCurrent[i] + rand);
+                Debug.Log("B count " + boardCount);
+            }
+			else if (rand == 3 && dialogCount < 3) // Dialog chance
 			{
 				float t = (dialogCount + 2) * 10;
 				dialog.sentences.Add(new Sentence(answerInfoCurrent[i], t));
 				dialogCount++;
-			}
+                Debug.Log("D " + answerInfoCurrent[i] + rand);
+                Debug.Log("D count " + dialogCount);
+            }
 			else // Poster chance
 			{
+
 				int poster = Random.Range(0, posters.Length);
 				posters[poster].text = answerInfoCurrent[i];
 				answerPosters.Add(posters[poster]);
-			}
+                
+                Debug.Log("Poster " + answerInfoCurrent[i] + rand);
+                Debug.Log("Poster count " + poster);
+            }
+
+
 		}
 
 		// Fill dummy information
@@ -203,7 +213,7 @@ public class TestMaker : MonoBehaviour
 			if(!answer)
 			{
 				int rand = Random.Range(0, dummyInfo.Count);
-				t.text = dummyInfo[rand];
+				t.text += dummyInfo[rand];
 				dummyInfo.RemoveAt(rand);
 			}
 		}
@@ -211,7 +221,7 @@ public class TestMaker : MonoBehaviour
 		for(int k = boardCount; k < 3; k++) // Fill board
 		{
 			int rand = Random.Range(0, dummyInfo.Count);
-			board[k].text = dummyInfo[rand];
+			board[k].text += dummyInfo[rand];
 			dummyInfo.RemoveAt(rand);
 		}
 

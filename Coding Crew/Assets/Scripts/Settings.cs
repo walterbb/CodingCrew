@@ -13,6 +13,8 @@ public class Settings : MonoBehaviour
 
     public void Awake()
     {
+        SetVolume(.3f);
+        Volume.value = .3f;
         groovy.playOnAwake = true;
         groovy.loop = true;
 

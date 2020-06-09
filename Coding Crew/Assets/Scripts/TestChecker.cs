@@ -13,8 +13,8 @@ public class TestChecker : MonoBehaviour
 
     public int Q1Choice, Q2Choice, Q3Choice, Q4Choice;
 
-    public List<string> RightAnswers = new List<string> { "7", "Purple", "Frozen", "November 5th", "North West", "Math Will Impower Students", "3", "12", "invincible",
-    "10", "13", "June 12th", "Red", "Dog", "3", "Coffee Mug", "Oslo", "94 Million", "Giuliano", "Kanye West", "1", "Alex"};
+    private List<string> RightAnswers = new List<string> { "7", "Purple", "Frozen", "May 4th", "North West", "Africa", "3", "12", "invincible",
+    "7", "13", "June 12th", "Red", "Dog", "3", "Coffee Mug", "Oslo", "94 Million", "Giuliano", "Kanye West", "1", "Alex"};
 
     private string playerAnswer1, playerAnswer2, playerAnswer3, playerAnswer4;
 

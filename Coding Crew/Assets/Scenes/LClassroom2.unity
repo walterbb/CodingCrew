@@ -525,7 +525,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: M = 16
+  m_Text: 
 --- !u!222 &35303009
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2120,9 +2120,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Mercury is the closest planet to the sun
-
-'
+  m_Text: 
 --- !u!222 &229728090
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4511,29 +4509,6 @@ MonoBehaviour:
   Q2Choice: 0
   Q3Choice: 0
   Q4Choice: 0
-  RightAnswers:
-  - 7
-  - Purple
-  - Frozen
-  - November 5th
-  - North West
-  - Math Will Impower Students
-  - 3
-  - 12
-  - invincible
-  - 10
-  - 13
-  - June 12th
-  - Red
-  - Dog
-  - 3
-  - Coffee Mug
-  - Oslo
-  - 94 Million
-  - Giuliano
-  - Kanye West
-  - 1
-  - Alex
   percentCorrect: 0
 --- !u!4 &453689491
 Transform:
@@ -6579,7 +6554,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: M = 16
+  m_Text: 
 --- !u!222 &621775725
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10051,9 +10026,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Mercury is the closest planet to the sun
-
-'
+  m_Text: 
 --- !u!222 &965506987
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11217,7 +11190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: M = 16
+  m_Text: 
 --- !u!222 &1134495829
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12075,7 +12048,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: M = 16
+  m_Text: 
 --- !u!222 &1227269040
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12204,29 +12177,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tc: {fileID: 453689490}
-  Questions:
-  - What is 4 + 3?
-  - What is blue + red?
-  - What Mr. Willis' favorite movie
-  - What is the date?
-  - Where is Oregon in the U.S?
-  - What does MWIS stand for?
-  - How many vehichles are outside?
-  - '% = Z*2 What is %?'
-  - Word Of The Day?
-  - How many Posters are in the room?
-  - X + Y = 10, what is X equal to?
-  - When is Mr.Willis' birthday?
-  - What color is Mr. Willis' shirt?
-  - What pet does Mr. Willis' not own?
-  - What is  3 + 2/9 * 0
-  - What is on Mr. Willis' desk?
-  - What is the capital of Norway?
-  - How many miles is the Earth from the Sun?
-  - Who isn't a creator of the game?
-  - Which is not a stage name?
-  - How many tree stumps are outside?
-  - What is Mr. Willis' first name?
   question1: {fileID: 628238325}
   answersText1:
   - {fileID: 2057184836}
@@ -15906,9 +15856,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Mercury is the closest planet to the sun
-
-'
+  m_Text: 
 --- !u!222 &1613042483
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16925,97 +16873,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716091715}
   m_CullTransparentMesh: 0
---- !u!1 &1722161448
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1722161449}
-  - component: {fileID: 1722161451}
-  - component: {fileID: 1722161450}
-  m_Layer: 0
-  m_Name: Date
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1722161449
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722161448}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 2.278, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 343488036}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!102 &1722161450
-TextMesh:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722161448}
-  m_Text: 'Today is: November 5th'
-  m_OffsetZ: 0
-  m_CharacterSize: 2.02
-  m_LineSpacing: 1
-  m_Anchor: 1
-  m_Alignment: 0
-  m_TabSize: 4
-  m_FontSize: 12
-  m_FontStyle: 0
-  m_RichText: 0
-  m_Font: {fileID: 12800000, guid: 06de380fb51f9c24abf18829090b8ab6, type: 3}
-  m_Color:
-    serializedVersion: 2
-    rgba: 4294967295
---- !u!23 &1722161451
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722161448}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 06de380fb51f9c24abf18829090b8ab6, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!1 &1730379540
 GameObject:
   m_ObjectHideFlags: 0
@@ -17299,7 +17156,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: M = 16
+  m_Text: 
 --- !u!222 &1764020251
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18230,7 +18087,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: I'm a Gummy Bear!
+  m_Text: 
 --- !u!222 &1897074953
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19810,7 +19667,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: M = 16
+  m_Text: 
 --- !u!222 &2016797644
 CanvasRenderer:
   m_ObjectHideFlags: 0

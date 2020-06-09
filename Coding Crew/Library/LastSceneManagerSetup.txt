@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/LClassroom1.unity
+- path: Assets/Scenes/LClassroom5.unity
   isLoaded: 1
   isActive: 1
