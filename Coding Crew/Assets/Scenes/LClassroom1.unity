@@ -6111,6 +6111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3d4a0dc99f5e4267ac37451be2eca2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allTest: {fileID: 842953671}
   TestActive: 0
   pointer: {fileID: 1381197005}
   mainCam: {fileID: 1813291515}
@@ -12397,9 +12398,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1965cf805f52b44f98e8208bb95bd209, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: {fileID: 577989903}
-  allTest: {fileID: 842953671}
   tc: {fileID: 453689490}
+  Questions:
+  - What is 4 + 3?
+  - What is blue + red?
+  - What Mr. Willis' favorite movie
+  - What is the date?
+  - Where is Oregon in the U.S?
+  - What does MWIS stand for?
+  - How many vehichles are outside?
+  - '% = Z*2 What is %?'
+  - Word Of The Day?
+  - How many Posters are in the room?
+  - X + Y = 10, what is X equal to?
+  - When is Mr.Willis' birthday?
+  - What color is Mr. Willis' shirt?
+  - What pet does Mr. Willis' not own?
+  - What is  3 + 2/9 * 0
+  - What is on Mr. Willis' desk?
+  - What is the capital of Norway?
+  - How many miles is the Earth from the Sun?
+  - Who isn't a creator of the game?
+  - Which is not a stage name?
+  - How many tree stumps are outside?
+  - What is Mr. Willis' first name?
   question1: {fileID: 628238325}
   answersText1:
   - {fileID: 2057184836}

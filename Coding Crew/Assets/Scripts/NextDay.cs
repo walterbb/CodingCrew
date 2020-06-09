@@ -23,10 +23,7 @@ public class NextDay : MonoBehaviour
 
     private void ChooseScene()
     {
-        if(PlayerPrefs.GetInt("Day") == 2)
-            SceneManager.LoadScene("LClassroom2");
-        else if (PlayerPrefs.GetInt("Day") == 3)
-            SceneManager.LoadScene("LClassroom3");
+        SceneManager.LoadScene(PlayerPrefs.GetInt("Day"));
 
     }
 }

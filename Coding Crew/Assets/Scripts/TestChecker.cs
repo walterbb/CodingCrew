@@ -29,12 +29,8 @@ public class TestChecker : MonoBehaviour
 
 
     public void Update()
-<<<<<<< HEAD
+
     {
-        Q1TestCheck();
-        Q2TestCheck();
-        Q3TestCheck();
-        Q4TestCheck();
 
         int numCorrect = 0;
 
@@ -61,34 +57,7 @@ public class TestChecker : MonoBehaviour
         percentCorrect = (numCorrect / 4f) * 100f;
     }
 
-    void Q1TestCheck()
-=======
->>>>>>> RandomQuestions
-    {
-        int numCorrect = 0;
-
-        if(Q1Correct)
-        {
-            numCorrect++;
-        }
-
-        if (Q2Correct)
-        {
-            numCorrect++;
-        }
-
-        if (Q3Correct)
-        {
-            numCorrect++;
-        }
-
-        if (Q4Correct)
-        {
-            numCorrect++;
-        }
-
-        percentCorrect = (numCorrect / 4f) * 100f;
-    }
+    
 
     public void Q1Select()
     {

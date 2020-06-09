@@ -18,6 +18,9 @@ public class DialogScript : MonoBehaviour
 			case 2:
 				dialogManager.sentences = sentencesDay02;
 				break;
+            default:
+                dialogManager.sentences = sentencesDay02;
+                break;
 		}
 
 		
