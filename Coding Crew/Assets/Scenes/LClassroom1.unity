@@ -2120,9 +2120,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Mercury is the closest planet to the sun
-
-'
+  m_Text: Default
 --- !u!222 &229728090
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10051,9 +10049,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Mercury is the closest planet to the sun
-
-'
+  m_Text: Default
 --- !u!222 &965506987
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15906,7 +15902,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Mercury is the closest planet to the sun
+  m_Text: 'Default
 
 '
 --- !u!222 &1613042483
