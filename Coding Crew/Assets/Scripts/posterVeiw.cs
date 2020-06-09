@@ -33,7 +33,11 @@ public class posterVeiw : MonoBehaviour
     {
         RaycastHit hit;
 
+<<<<<<< HEAD
 		if (Input.GetKeyDown(KeyCode.Space))
+=======
+        if (Input.GetMouseButtonDown(0))
+>>>>>>> RandomQuestions
         {
             if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 20))
             {

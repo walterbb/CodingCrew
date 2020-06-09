@@ -5,194 +5,138 @@ using UnityEngine.UI;
 
 public class TestMaker : MonoBehaviour
 {
-    public Test test;
-    public GameObject allTest;
+    
     public TestChecker tc;
 
     private int Qnum;
-    
+
+    public List<string> Questions = new List<string> {"What is 4 + 3?", "What is blue + red?", "What Mr. Willis' favorite movie", "What is the date?",
+        "Where is Oregon in the U.S?", "What does MWIS stand for?", "How many vehichles are outside?", "% = Z*2 What is %?", "Word Of The Day?",
+        "How many Posters are in the room?", "X + Y = 10, what is X equal to?", "When is Mr.Willis' birthday?", "What color is Mr. Willis' shirt?", "What pet does Mr. Willis' not own?", "What is  3 + 2/9 * 0",
+        "What is on Mr. Willis' desk?", "What is the capital of Norway?", "How many miles is the Earth from the Sun?", "Who isn't a creator of the game?", "Which is not a stage name?", "How many tree stumps are outside?",
+        "What is Mr. Willis' first name?"};
+
+    public List<string[]> Answers = new List<string[]> { new string[] { "70", "20", "7", "56" }, new string[] { "Purple", "Pink", "Green", "Yellow" },
+        new string[] { "Ponyo", "Frozen", "Finding Nemo", "Lion King" }, new string[] { "June 21th", "November 15th", "November 5th", "November 4th"},
+        new string[] { "North West", "South East", "Not in the U.S", "North East" }, new string[] { "Mr. Willis Is Cool", "Mr. Willis Invented Cool", "Math Work Is Super", "Math Will Impower Students" },
+        new string[] { "3", "10", "0", "1" },new string[] { "2", "34", "12", "43" }, new string[] { "invisible", "invincible", "important", "inconsequential" },
+        new string[] { "0", "5", "10", "11" }, new string[] { "13", "-5", "10", "392" },new string[] { "July 6th", "June 12th", "October 4th", "July 16th" }, new string[] { "Blue", "Red", "Yellow", "Green" },
+        new string[] { "Dog", "Lemur", "Crocidile", "Monkey" }, new string[] { "3", "0", "2/3", ".245" }, new string[] { "Pencils", "Papers", "Apple", "Coffee Mug" },new string[] { "Oslo", "Burgen", "Lillehammer", "Kroger"},
+        new string[] { "94 Million", "6 Million", "2 Light Years", "84 Billion" }, new string[] { "Luke", "Walt", "Matthew", "Giuliano" }, new string[] { "Lady Gaga", "Jamie Foxx", "Katy Perry", "Kanye West" },
+        new string[] { "2", "5", "4", "1" }, new string[] { "Alan", "Arnold", "Adam", "Alex" }};
+
+
+
     public Text question1;
     public List<Text> answersText1;
-    private string[] Q1Questions = new string[] { "What is 4 + 3?", "What is blue + red?", "What Mr. Willis' favorite movie"};
-        public readonly string[] q1answer1 =
-            new string[] {"70","1","7","12"};
-        public readonly string[] q1answer2 =
-            new string[] { "Purple", "Pink", "Green", "Yellow" };
-        public readonly string[] q1answer3 =
-            new string[] { "Ponyo", "Frozen", "Finding Nemo", "Lion King" };
 
     public Text question2;
     public List<Text> answersText2;
-    private string[] Q2Questions = new string[] { "What is the date?", "Where is Oregon in the U.S?", "What does MWIS stand for?" };
-        public readonly string[] q2answer1 =
-            new string[] { "June 12th", "November 15th", "November 5th", "June 14th"};
-        public readonly string[] q2answer2 =
-            new string[] { "North West", "South East", "Not in the U.S", "North East" };
-        public readonly string[] q2answer3 =
-            new string[] { "Mr. Willis Is Cool", "Mr. Willis Invented Cool", "Math Work Is Super", "Math Will Impower Students" };
-
+    
     public Text question3;
     public List<Text> answersText3;
-    private string[] Q3Questions = new string[] { "How many vehichles are outside?", "% = Z*2 What is %?", "Word Of The Day?" };
-        public readonly string[] q3answer1 =
-            new string[] { "3", "10", "0", "1" };
-        public readonly string[] q3answer2 =
-            new string[] { "2", "34", "12", "43" };
-        public readonly string[] q3answer3 =
-            new string[] { "invisible", "invincible", "important", "inconsequential" };
-
+    
     public Text question4;
     public List<Text> answersText4;
-    private string[] Q4Questions = new string[] { "How many Posters are in the room?", "X + Y = 10, what is X equal to?", "When is Mr.Willis' birthday?" };
-        public readonly string[] q4answer1 =
-            new string[] { "0", "5", "10", "11" };
-        public readonly string[] q4answer2 =
-            new string[] { "13", "-5", "10", "392" };
-        public readonly string[] q4answer3 =
-            new string[] { "July 6th", "June 12th", "October 4th", "July 16th" };
 
+    int Qcount = 0;
+
+    List<int> Rands = new List<int>();
     // Start is called before the first frame update
-    void OnEnable()
+    void Start()
     {
-        Qnum = PlayerPrefs.GetInt("Day") - 1;
+        PlayerPrefs.SetInt("randnums", (PlayerPrefs.GetInt("Day") - 1) * 4);
+        for (int i = 0; i < PlayerPrefs.GetInt("randnums"); i++)
+        {
+            int temp = PlayerPrefs.GetInt("randnums" + i);
+            Questions.Remove(Questions[PlayerPrefs.GetInt("randnums"+i)]);
+            Answers.Remove(Answers[PlayerPrefs.GetInt("randnums" + i)]);
+            Debug.Log("randnums" + i+ ": " + temp);
+        }
         //Debug.Log("QNUM = " + Qnum + " AND PF =" + PlayerPrefs.GetInt("Day"));
-
-        Question1Set();
-        Question2Set();
-        Question3Set();
-        Question4Set();
-    }
-
-    void Question1Set()
-    {
-        tc.Q1Choice = Qnum;
-
-        switch (Qnum)
+        
+        
+        for (Qcount = 0; Qcount < 4; Qcount++)
         {
-            case 0:
-                question1.text = Q1Questions[Qnum];
-                for (int i = 0; i < answersText1.Count; i++)
-                {
-                    answersText1[i].text = q1answer1[i];
-                }
-                break;
-            case 1:
-                question1.text = Q1Questions[Qnum];
-                for (int i = 0; i < answersText1.Count; i++)
-                {
-                    answersText1[i].text = q1answer2[i];
-                }
-                break;
-            case 2:
-                question1.text = Q1Questions[Qnum];
-                for (int i = 0; i < answersText2.Count; i++)
-                {
-                    answersText1[i].text = q1answer3[i];
-                }
-                break;
+            QuestionSet();
         }
+
     }
 
-    void Question2Set()
+
+    void QuestionSet()
     {
-        tc.Q2Choice = Qnum;
-
-        switch (Qnum)
+        int rand = Random.Range(0, Questions.Count);
+        
+        if(Qcount == 0)
         {
-            case 0:
-                question2.text = Q2Questions[Qnum];
-                for (int i = 0; i < answersText2.Count; i++)
-                {
-                    answersText2[i].text = q2answer1[i];
-                }
-                break;
-            case 1:
-                question2.text = Q2Questions[Qnum];
-                for (int i = 0; i < answersText2.Count; i++)
-                {
-                    answersText2[i].text = q2answer2[i];
-                }
-                break;
-            case 2:
-                question2.text = Q2Questions[Qnum];
-                for (int i = 0; i < answersText2.Count; i++)
-                {
-                    answersText2[i].text = q2answer3[i];
-                }
-                break;
+            question1.text = Questions[rand];
+            string[] currentAnswers = Answers[rand];
+
+            for (int i = 0; i < answersText1.Count; i++)
+            {
+                answersText1[i].text = currentAnswers[i];
+            }
         }
+
+        if (Qcount == 1)
+        {
+            question2.text = Questions[rand];
+            string[] currentAnswers = Answers[rand];
+
+            for (int i = 0; i < answersText1.Count; i++)
+            {
+                answersText2[i].text = currentAnswers[i];
+            }
+        }
+
+        if (Qcount == 2)
+        {
+            question3.text = Questions[rand];
+            string[] currentAnswers = Answers[rand];
+
+            for (int i = 0; i < answersText1.Count; i++)
+            {
+                answersText3[i].text = currentAnswers[i];
+            }
+        }
+
+        if (Qcount == 3)
+        {
+            question4.text = Questions[rand];
+            string[] currentAnswers = Answers[rand];
+
+            for (int i = 0; i < answersText1.Count; i++)
+            {
+                answersText4[i].text = currentAnswers[i];
+            }
+        }
+
+        Questions.Remove(Questions[rand]);
+        Answers.Remove(Answers[rand]);
+
+        
+        Rands.Add(rand);
+
+        int totalrands = PlayerPrefs.GetInt("randnums");
+        PlayerPrefs.SetInt("randnums" + (Qcount + totalrands), rand);
+        Debug.Log(rand);
+        Debug.Log("randnums" + (Qcount + totalrands) + ": " + PlayerPrefs.GetInt("randnums" + (Qcount + totalrands), rand));
+
+        //PlayerPrefs.SetInt("randnums", totalrands);
+
+        //for (int i = 0; i < Rands.Count; i++)
+        //{
+        //    PlayerPrefs.SetInt("randnums" + i+ totalrands, Rands[i]);
+        //}
+
     }
 
-    void Question3Set()
-    {
-        tc.Q3Choice = Qnum;
-
-        switch (Qnum)
-        {
-            case 0:
-                question3.text = Q3Questions[Qnum];
-                for (int i = 0; i < answersText3.Count; i++)
-                {
-                    answersText3[i].text = q3answer1[i];
-                }
-                break;
-            case 1:
-                question3.text = Q3Questions[Qnum];
-                for (int i = 0; i < answersText3.Count; i++)
-                {
-                    answersText3[i].text = q3answer2[i];
-                }
-                break;
-            case 2:
-                question3.text = Q3Questions[Qnum];
-                for (int i = 0; i < answersText3.Count; i++)
-                {
-                    answersText3[i].text = q3answer3[i];
-                }
-                break;
-        }
-    }
-
-    void Question4Set()
-    {
-        tc.Q4Choice = Qnum;
-
-        switch (Qnum)
-        {
-            case 0:
-                question4.text = Q4Questions[Qnum];
-                for (int i = 0; i < answersText4.Count; i++)
-                {
-                    answersText4[i].text = q4answer1[i];
-                }
-                break;
-            case 1:
-                question4.text = Q4Questions[Qnum];
-                for (int i = 0; i < answersText4.Count; i++)
-                {
-                    answersText4[i].text = q4answer2[i];
-                }
-                break;
-            case 2:
-                question4.text = Q4Questions[Qnum];
-                for (int i = 0; i < answersText3.Count; i++)
-                {
-                    answersText4[i].text = q4answer3[i];
-                }
-                break;
-        }
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if(test.TestActive)
-        {
-            allTest.SetActive(true);
-        }
-        else if (!test.TestActive)
-        {
-            allTest.SetActive(false);
-        }
+      
     }
+
 }

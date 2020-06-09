@@ -13,12 +13,10 @@ public class TestChecker : MonoBehaviour
 
     public int Q1Choice, Q2Choice, Q3Choice, Q4Choice;
 
-    private bool[] Q1Picked = new bool[] { false, false, false, false };
-    private bool[] Q2Picked = new bool[] { false, false, false, false };
-    private bool[] Q3Picked = new bool[] { false, false, false, false };
-    private bool[] Q4Picked = new bool[] { false, false, false, false };
+    private List<string> RightAnswers = new List<string> { "7", "Purple", "Frozen", "November 5th", "North West", "Math Will Impower Students", "3", "12", "invincible",
+    "10", "13", "June 12th", "Red", "Dog", "3", "Coffee Mug", "Oslo", "94 Million", "Giuliano", "Kanye West", "1", "Alex"};
 
-	private bool[] falseList = new bool[] { false, false, false, false };
+    private string playerAnswer1, playerAnswer2, playerAnswer3, playerAnswer4;
 
     private bool Q1Correct,Q2Correct,Q3Correct,Q4Correct;
 
@@ -31,6 +29,7 @@ public class TestChecker : MonoBehaviour
 
 
     public void Update()
+<<<<<<< HEAD
     {
         Q1TestCheck();
         Q2TestCheck();
@@ -63,238 +62,107 @@ public class TestChecker : MonoBehaviour
     }
 
     void Q1TestCheck()
+=======
+>>>>>>> RandomQuestions
     {
-        switch(Q1Choice)
-        {
-            case 0:
-                if (Q1Picked[2])
-                {
-                    Q1Correct = true;
-                }
-                else
-                {
-                    Q1Correct = false;
-                }
-                break;
-            case 1:
-                if (Q1Picked[0])
-                {
-                    Q1Correct = true;
-                }
-                else
-                {
-                    Q1Correct = false;
-                }
-                break;
-            case 2:
-                if (Q1Picked[1])
-                {
-                    Q1Correct = true;
-                }
-                else
-                {
-                    Q1Correct = false;
-                }
-                break;
-        }
-    }
+        int numCorrect = 0;
 
-    void Q2TestCheck()
-    {
-        switch (Q2Choice)
+        if(Q1Correct)
         {
-            case 0:
-                if (Q2Picked[2])
-                {
-                    Q2Correct = true;
-                }
-                else
-                {
-                    Q2Correct = false;
-                }
-                break;
-            case 1:
-                if (Q2Picked[0])
-                {
-                    Q2Correct = true;
-                }
-                else
-                {
-                    Q2Correct = false;
-                }
-                break;
-            case 2:
-                if (Q2Picked[1])
-                {
-                    Q2Correct = true;
-                }
-                else
-                {
-                    Q2Correct = false;
-                }
-                break;
+            numCorrect++;
         }
-    }
 
-    void Q3TestCheck()
-    {
-        switch (Q3Choice)
+        if (Q2Correct)
         {
-            case 0:
-                if (Q3Picked[2])
-                {
-                    Q3Correct = true;
-                }
-                else
-                {
-                    Q3Correct = false;
-                }
-                break;
-            case 1:
-                if (Q3Picked[0])
-                {
-                    Q3Correct = true;
-                }
-                else
-                {
-                    Q3Correct = false;
-                }
-                break;
-            case 2:
-                if (Q3Picked[1])
-                {
-                    Q3Correct = true;
-                }
-                else
-                {
-                    Q3Correct = false;
-                }
-                break;
+            numCorrect++;
         }
-    }
 
-    void Q4TestCheck()
-    {
-        switch (Q4Choice)
+        if (Q3Correct)
         {
-            case 0:
-                if (Q4Picked[2])
-                {
-                    Q4Correct = true;
-                }
-                else
-                {
-                    Q4Correct = false;
-                }
-                break;
-            case 1:
-                if (Q4Picked[0])
-                {
-                    Q4Correct = true;
-                }
-                else
-                {
-                    Q4Correct = false;
-                }
-                break;
-            case 2:
-                if (Q4Picked[1])
-                {
-                    Q4Correct = true;
-                }
-                else
-                {
-                    Q4Correct = false;
-                }
-                break;
+            numCorrect++;
         }
+
+        if (Q4Correct)
+        {
+            numCorrect++;
+        }
+
+        percentCorrect = (numCorrect / 4f) * 100f;
     }
 
     public void Q1Select()
     {
-		Q1Picked = falseList;
+        Text pickText1 = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>();
+        playerAnswer1 = pickText1.text;
 
-        if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 1"))
+        foreach (string a in RightAnswers)
         {
-            Q1Picked[0] = true;
-        }
-        else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 2"))
-        {
-            Q1Picked[1] = true;
-        }
-        else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 3"))
-        {
-            Q1Picked[2] = true;
-        }
-        else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 4"))
-        {
-            Q1Picked[3] = true;
+            if(playerAnswer1 == a)
+            {
+                Q1Correct = true;
+                break;
+            }
+            else
+            {
+                Q1Correct = false;
+            }
         }
     }
 
     public void Q2Select()
     {
-		Q2Picked = falseList;
+        Text pickText2 = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>();
+        playerAnswer2 = pickText2.text;
 
-		if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 1"))
+        foreach (string a in RightAnswers)
         {
-            Q2Picked[0] = true;
-        }
-        else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 2"))
-        {
-            Q2Picked[1] = true;
-        }
-        else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 3"))
-        {
-            Q2Picked[2] = true;
-        }
-        else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 4"))
-        {
-            Q2Picked[3] = true;
+            if (playerAnswer2 == a)
+            {
+                Q2Correct = true;
+                break;
+            }
+            else
+            {
+                Q2Correct = false;
+            }
         }
     }
 
     public void Q3Select()
     {
-		Q3Picked = falseList;
+        Text pickText3 = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>();
+        playerAnswer3 = pickText3.text;
 
-		if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 1"))
+        foreach (string a in RightAnswers)
         {
-            Q3Picked[0] = true;
-        }
-        else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 2"))
-        {
-            Q3Picked[1] = true;
-        }
-        else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 3"))
-        {
-            Q3Picked[2] = true;
-        }
-        else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 4"))
-        {
-            Q3Picked[3] = true;
+            if (playerAnswer3 == a)
+            {
+                Q3Correct = true;
+                break;
+            }
+            else
+            {
+                Q3Correct = false;
+            }
         }
     }
 
     public void Q4Select()
     {
-		Q4Picked = falseList;
+        Text pickText4 = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>();
+        playerAnswer4 = pickText4.text;
 
-		if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 1"))
+        foreach (string a in RightAnswers)
         {
-            Q4Picked[0] = true;
-        }
-        else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 2"))
-        {
-            Q4Picked[1] = true;
-        }
-        else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 3"))
-        {
-            Q4Picked[2] = true;
-        }
-        else if (EventSystem.current.currentSelectedGameObject.CompareTag("Answer 4"))
-        {
-            Q4Picked[3] = true;
+            if (playerAnswer4 == a)
+            {
+                Q4Correct = true;
+                break;
+            }
+            else
+            {
+                Q4Correct = false;
+            }
         }
     }
 }
