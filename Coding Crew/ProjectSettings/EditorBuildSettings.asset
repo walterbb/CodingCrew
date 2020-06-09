@@ -13,16 +13,16 @@ EditorBuildSettings:
     guid: 5c106ec83e4624b7fb30aed344fac7c2
   - enabled: 1
     path: Assets/Scenes/LClassroom2.unity
-    guid: f547300db9b05c643810a0c7f95f62b2
+    guid: f05744a4d2527a043a52c955d6d35c69
   - enabled: 1
     path: Assets/Scenes/LClassroom3.unity
-    guid: afd1540e5635e1e41a218364dc30ad9d
+    guid: c8773526bb0206e4282802c219c96ba8
   - enabled: 1
     path: Assets/Scenes/LClassroom4.unity
-    guid: 314ea4d2a6939ae4b8b5cc1456be4728
+    guid: a8c8f6fb876863240a7b06cf45215119
   - enabled: 1
     path: Assets/Scenes/LClassroom5.unity
-    guid: e8ad46eb87072d6428b6b8bbd7e9df57
+    guid: d13b97d568dfa0a4abb5122e14e84275
   - enabled: 1
     path: Assets/Scenes/GradeCheck.unity
     guid: f6805ed966b51448c9247756b5ddd585

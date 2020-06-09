@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Highlight : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class Highlight : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     void Update()
