@@ -25,8 +25,5 @@ public class gradeText : MonoBehaviour
         Debug.Log("oldTotal " + oldTotal);
         Debug.Log("percent correct " + TestChecker.instance.percentCorrect);
         Debug.Log("Day " + PlayerPrefs.GetInt("Day"));
-
     }
-
-    
 }

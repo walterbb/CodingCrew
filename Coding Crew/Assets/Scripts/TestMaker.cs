@@ -18,11 +18,11 @@ public class TestMaker : MonoBehaviour
 
     private List<string[]> Answers = new List<string[]> { new string[] { "70", "20", "7", "56" }, new string[] { "Purple", "Pink", "Green", "Yellow" },
         new string[] { "Ponyo", "Frozen", "Finding Nemo", "Lion King" }, new string[] { "June 21th", "July 15th", "June 5th", "May 4th"},
-        new string[] { "North West", "South East", "Not in the U.S", "North East" }, new string[] { "Antarctica", "Africa", "Australia", "Greenland" },
-        new string[] { "3", "10", "0", "1" },new string[] { "2", "34", "12", "43" }, new string[] { "invisible", "invincible", "important", "inconsequential" },
+        new string[] { "North West", "South East", "South West", "North East" }, new string[] { "Antarctica", "Africa", "Australia", "Greenland" },
+        new string[] { "3", "10", "0", "1" },new string[] { "2", "34", "12", "43" }, new string[] { "invisible", "invincible", "important", "invented" },
         new string[] { "0", "5", "7", "11" }, new string[] { "13", "-5", "6", "392" },new string[] { "July 6th", "June 12th", "July 4th", "July 16th" }, new string[] { "Blue", "Red", "Yellow", "Green" },
         new string[] { "Dog", "Lemur", "Crocidile", "Monkey" }, new string[] { "3", "0", "2/3", ".245" }, new string[] { "Pencils", "Papers", "Apple", "Coffee Mug" },new string[] { "Oslo", "Burgen", "Lillehammer", "Kroger"},
-        new string[] { "94 Million", "6 Million", "2 Light Years", "84 Billion" }, new string[] { "Luke", "Walt", "Matthew", "Giuliano" }, new string[] { "Lady Gaga", "Jamie Foxx", "Katy Perry", "Kanye West" },
+        new string[] { "94 Million", "6 Million", "2 Million", "84 Billion" }, new string[] { "Luke", "Walt", "Matthew", "Giuliano" }, new string[] { "Lady Gaga", "Jamie Foxx", "Katy Perry", "Kanye West" },
         new string[] { "2", "5", "4", "1" }, new string[] { "Alan", "Arnold", "Adam", "Alex" }};
 
 

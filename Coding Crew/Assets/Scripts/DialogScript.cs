@@ -27,7 +27,7 @@ public class DialogScript : MonoBehaviour
     }
 
 	public List<Sentence> sentencesDay01 = new List<Sentence> {
-		new Sentence("Hi, I'm Mr. Willis, welcome to math class.", 8.5f),
+		new Sentence("Hi, I'm Mr. Willis, welcome to class.", 8.5f),
 		new Sentence("To pass this class you have to pass each daily test.", 9f),
 		new Sentence("Extra information can be found on posters and on the board.", 10f)
 
