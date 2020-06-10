@@ -86,20 +86,6 @@ public class Test : MonoBehaviour
         {
             TestOver();
         }
-
-        if(Input.GetKeyDown(KeyCode.T))
-        {
-            if(pauseTest)
-            {
-                pauseTest = false;
-                TestTime();
-            }
-            else if (!pauseTest)
-            {
-                pauseTest = true;
-                TestPause();
-            }
-        }
     }
 
     void BeforeStart()

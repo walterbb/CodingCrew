@@ -17,7 +17,7 @@ public class TestMaker : MonoBehaviour
         "What is Mr. Willis' first name?"};
 
     private List<string[]> Answers = new List<string[]> { new string[] { "70", "20", "7", "56" }, new string[] { "Purple", "Pink", "Green", "Yellow" },
-        new string[] { "Ponyo", "Frozen", "Finding Nemo", "Lion King" }, new string[] { "June 21th", "July 15th", "June 5th", "May 4th"},
+        new string[] { "Ponyo", "Frozen", "Nemo", "Lion King" }, new string[] { "June 21th", "July 15th", "June 5th", "May 4th"},
         new string[] { "North West", "South East", "South West", "North East" }, new string[] { "Antarctica", "Africa", "Australia", "Greenland" },
         new string[] { "3", "10", "0", "1" },new string[] { "2", "34", "12", "43" }, new string[] { "invisible", "invincible", "important", "invented" },
         new string[] { "0", "5", "7", "11" }, new string[] { "13", "-5", "6", "392" },new string[] { "July 6th", "June 12th", "July 4th", "July 16th" }, new string[] { "Blue", "Red", "Yellow", "Green" },
